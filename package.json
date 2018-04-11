@@ -1,0 +1,26 @@
+{
+  "name": "scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jsdom": "^11.0.4",
+    "@types/node": "^9.6.4"
+  },
+  "dependencies": {
+    "jsdom": "^11.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johncoffee/scaper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/johncoffee/scaper/issues"
+  },
+  "homepage": "https://github.com/johncoffee/scaper#readme"
+}
