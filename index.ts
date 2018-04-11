@@ -42,11 +42,16 @@ function getArticles(url:string):Promise<string> {
 
     const dom = new JSDOM(res, {})
 
-    const window = dom.window
+    const document = dom.window.document
 
-    const articles = Array.from(window.document.querySelectorAll('article.node-article'))
+    // beware! Here be dragons
+    const articles = Array.from( document.querySelectorAll(`.item`) )
+      .map( article => { return { _el: article } })
+      .map( article => { return { ...article, datetime: article._el.querySelector(`[datetime]`).getAttribute('datetime') } })
+      .map( article => { return { ...article, heading: article._el.querySelector(`[class*=heading]`).textContent } })
 
     console.log(`Found ${articles.length} articles`)
+    console.log(articles)
   }
   catch (e) {
     console.error(e)
