@@ -1,2280 +1,1405 @@
-<?php
-echo <<<BALLS
-
-
 <!DOCTYPE html>
-<!--[if IEMobile 7]><html class="iem7"><![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js ie ie7" lang="da"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js ie ie8" lang="da"><![endif]-->
-<!--[if (IE 9)&!(IEMobile)]><html class="no-js ie ie9" lang="da"><![endif]-->
-<!--[if (gt IE 9)|(gt IEMobile 7)|!(IE)]><!--><html class="no-js" lang="da"><!--<![endif]-->
+<!--[if lt IE 7 ]> <html lang="da" dir="ltr" class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="da" dir="ltr" class="ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="da" dir="ltr" class="ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="da" dir="ltr" class="ie ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="da" dir="ltr"> <!--<![endif]-->
+
   <head>
-    <title>Nyheder om forskning og videnskab</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="apple-touch-icon" sizes="114x114" href="/profiles/videnskab/themes/custom/videnskab_theme/images/apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon" sizes="72x72" href="/profiles/videnskab/themes/custom/videnskab_theme/images/apple-touch-icon-72x72.png" />
+    <!-- Menu items object start -->
+    <script>
+window.DR = window.DR || {}; window.DR.navigation = {"site":{"title":"Viden","url":"\/nyheder\/viden"},"links":[{"title":"Kroppen","url":"\/nyheder\/viden\/kroppen"},{"title":"Klima","url":"\/nyheder\/viden\/klima"},{"title":"Teknologi","url":"\/nyheder\/viden\/teknologi"},{"title":"Nysgerrig","url":"\/nyheder\/viden\/nysgerrig"}]}
+</script>    <!-- Menu items object end -->
+    <!-- DRC head start -->
+    <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="apple-touch-icon" sizes="144x144" href="/profiles/videnskab/themes/custom/videnskab_theme/images/apple-touch-icon-144x144.png" />
-<meta property="fb:pages" content="127538210589588" />
-<link rel="shortcut icon" href="https://videnskab.dk/profiles/videnskab/themes/custom/videnskab_theme/favicon.ico" type="image/vnd.microsoft.icon" />
-<link rel="apple-touch-icon" href="/profiles/videnskab/themes/custom/videnskab_theme/images/apple-touch-icon.png" />
-    <link type="text/css" rel="stylesheet" href="https://videnskab.dk/sites/default/files/css/css_VNKUxbsqKIjvxvdhGJrbPp1UgkTTi0W4AocVzDpKDi4.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://videnskab.dk/sites/default/files/css/css_07oZGJqIiF-VlJjJAAwVM8aoeQGWLDqwDZdoLLhhOqA.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://videnskab.dk/sites/default/files/css/css_OXZDvS_OmnHYv26QbmsVy4Ufi9AYVVg0x6UgtPSaq4Q.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://videnskab.dk/sites/default/files/css/css_EnPFlaUtxvdjga4JJJdEDRGu7jQxmUYz5-sAroruZw0.css" media="print" />
-
-    <script>
-      (function() {
-        var gads = document.createElement('script');
-        gads.async = true;
-        gads.type = 'text/javascript';
-        gads.src = '//www.googletagservices.com/tag/js/gpt.js';
-        var node = document.getElementsByTagName('script')[0];
-        node.parentNode.insertBefore(gads, node);
-      })();
-    </script>
-
-    <script>
-        var googletag = googletag || {};
-        googletag.cmd = googletag.cmd || [];
-    </script>
-
-  <script type='text/javascript'>
-
-    function checkAddBlocker() {
-        // check add block enabled
-      var adBlockEnabled = false;
-      var testAd = document.createElement('div');
-      testAd.innerHTML = '&nbsp;';
-      testAd.className = 'adsbox';
-      document.body.appendChild(testAd);
-      window.setTimeout(function() {
-        if (testAd.offsetHeight === 0) {
-          adBlockEnabled = true;
-        }
-        testAd.remove();
-        dataLayer.push({ 'adBlockEnabled' : adBlockEnabled})
-      }, 100);
+<meta name="apple-itunes-app" content="app-id=398346158" />
+<meta name="robots" content="index, follow">
+<meta name="name" content="DR">
+<meta name="language" content="da-dk">
+<meta name="copyright" content="© DR" />
+<meta name="description" content="Her finder du nyheder fra DR og alle vores TV og Radio kanaler live og on demand - når du har lyst.">
+<meta name="keywords" content="dr1, dr2, dr3, drk, ultra, ramasjang, drtv, tv, p1, p2, p3, p4, p5, p6, mama, podcast, nyheder">
+<meta name="subject" content="tv, live, radio, dr, on-demand">
+<meta name="publisher" content="DR, DR BYEN, Emil Holms Kanal 20, DK-0999 København C, tlf.: +45 35 20 30 40">
+<meta name="site" content="Viden" />
+<meta name="urn" content="urn:dr:drupal:node:37781" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Viden" />
+<meta property="og:site_name" content="DR" />
+<meta property="og:url" content="https://www.dr.dk/nyheder/viden" />
+<meta property="og:image" content="http://www.dr.dk/design/www/global/img/global/DRLogos/DR_logo_new2.jpg" />
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@DRNyheder">
+<meta property="fb:app_id" content="334841956565056">
+<script>
+  (function (win, doc) {
+    var head = doc.head || doc.getElementsByTagName("head")[0];
+    if ("-ms-user-select" in doc.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+      var msViewportStyle = doc.createElement("style");
+      msViewportStyle.appendChild(
+          doc.createTextNode("@-ms-viewport{width:auto!important}")
+      );
+      head.appendChild(msViewportStyle);
     }
-
-    function addLoadEventListener() {
-        // Add event listener for when banners are loaded.
-      googletag.pubads().addEventListener('slotRenderEnded', function(event) {
-
-        var containsAd = !event.isEmpty;
-
-        var elementId = event.slot.getSlotElementId()
-
-        console.log('Adunit path: ' + event.slot.C + ' is rendered: ' + containsAd);
-
-        var obj = {};
-        obj[event.slot.C] =  {
-          'containsAd' : containsAd,
-          'advertiserId' : event.advertiserId,
-          'campaignId' : event.campaignId
-        }
-        dataLayer.push(obj)
-
-      });
-    }
-
-  </script>
-  <script type='text/javascript'>
-    var slots = []
+  }(window, document));
+</script>
+<script>
+  !function(A,t){function e(A){var e=t.createElement("style");e.textContent=A,n.appendChild(e)}var a,n=t.getElementsByTagName("head")[0],o=!1;try{a=A.localStorage["drc-webfonts"],a&&e(a)}catch(A){}var c=A.FontFace;if(c){var s=new c("drc-wfl-woff2",'url("data:application/font-woff2;base64,d09GMgABAAAAAAIkAAoAAAAABVwAAAHcAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlYAgloKLEoBNgIkAxgLDgAEIAWDcgc1G7IEyB6SJAFID5YA3nAHC6h4+H7s27nP1kTyOoQkGuJWtNGIJKYznRI3VEL7IaHq985ZUuKryZKcAtJsi5eULwUybm9KzajBBhywZ5ZwoJNuwDX5C/xBjvz5DbsoNsvG1NGQiqp0NMLZ7JlnW+5MaM3HwcHheUQeiVokekHkn/FRdefvJaTp2PczN+I1Sc3k9VuX51Tb0Tqqf1deVXGdJsDOhz0/EffMOPOzHNH06pYkDDjs+P8fb/z/8n9Iq8ITzWywkP6PBMMN9L/O7vY2FNoTAkp5PpD6g1nV9WmyQnM5uPpAMHR2fe06jbfvzPriekVTQxC6lpKr43oDtRZfCATl5OVAUKykqwm9o8R/kg37cxa6eZikS7cjK4aIwoyh6jOFplhFrz2b833G3Jii9AjDUiAZ9AxZtxdEYV6imvRF0+0Nej3wu6nPZrTLh81AVcV3kmMVdQj6Qbe9qetzbuDZ7vXOlRrqooFSxCv6SfrDICA6rnHZXQPVcUHJYGcoqa3jVH7ATrjWBNYYkEqF3RFpVIl0q2JvMOJd7/TyjXHw2NyAuJpNaEbz8RTEVtCbSH7JrwQQOqwGl7sTUOtdBZIY2DKqKlvOmPvUxJaURAZZcviTT0SKHCXqzwc=") format("woff2")',{});s.load().catch(function(){}),o="loading"===s.status||"loaded"===s.status}var f=new XMLHttpRequest,d="/assets/css/007/webfonts/"+(o?"woff2":"woff")+".css";f.open("get",d,!0),f.onreadystatechange=function(){if(4===f.readyState&&(f.status>=200&&f.status<300||304===f.status)){var t=f.responseText;if(a!==t){e(t);try{A.localStorage["drc-webfonts"]=t}catch(A){}}}},a?A.addEventListener("load",function(){f.send(null)},!1):t.addEventListener("DOMContentLoaded",function(){f.send(null)},!1)}(window,document);
+</script>
+<link rel="canonical" href="https://www.dr.dk/nyheder/viden" />
+<link rel="prev" href="">
+<link rel="next" href="">
+<link rel="dns-prefetch" href="//asset.dr.dk">
+<link rel="apple-touch-icon" sizes="" href="">
+<link rel="icon" type="" href="">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/sites/all/themes/custom/dr_phoenix/favicon.ico">
+<link rel="stylesheet" href="/assets/css/007/global.css">
+<title>Viden | DR</title>
 
 
-        slots.push({ 'path' : '/33147440/DFP_FRONTMEDIA_VIDENSKAB_930X180_FORSIDE', 'identifier' : 'div-gpt-ad-taxonomy/term/111-10', 'sizes' : [[930,180],[728,90]], 'isMobile' : false})
+<script id="ensighten-script" src="//www.dr.dk/drdk-ensighten/Bootstrap.js"></script>
 
-
-        slots.push({ 'path' : '/33147440/DFP_FRONTMEDIA_VIDENSKAB_930X180_TOP', 'identifier' : 'div-gpt-ad-taxonomy/term/111-0', 'sizes' : [[930,180],[728,90]], 'isMobile' : false})
-
-
-        slots.push({ 'path' : '/33147440/DFP_FRONTMEDIA_VIDENSKAB_160X600_LEFT', 'identifier' : 'div-gpt-ad-taxonomy/term/111-1', 'sizes' : [160,600], 'isMobile' : false})
-
-
-        slots.push({ 'path' : '/33147440/DFP_FRONTMEDIA_VIDENSKAB_160X600_LEFT-STICKY', 'identifier' : 'div-gpt-ad-taxonomy/term/111-2', 'sizes' : [160,600], 'isMobile' : false})
-
-
-        slots.push({ 'path' : '/33147440/DFP_FRONTMEDIA_VIDENSKAB_160X600_RIGHT', 'identifier' : 'div-gpt-ad-taxonomy/term/111-3', 'sizes' : [160,600], 'isMobile' : false})
-
-
-        slots.push({ 'path' : '/33147440/DFP_FRONTMEDIA_VIDENSKAB_160X600_RIGHT-STICKY', 'identifier' : 'div-gpt-ad-taxonomy/term/111-4', 'sizes' : [160,600], 'isMobile' : false})
-      </script>
-   <script type='text/javascript'>
-   var ga_slots = [];
-
-    googletag.cmd.push(function() {
-      var isMobile = window.matchMedia('only screen and (max-width: 980px)').matches;
-      for (i = 0; i < slots.length; i++) {
-        var path = slots[i]['path'];
-        var sizes = slots[i]['sizes'];
-        var identifier = slots[i]['identifier'];
-
-        // Only define slots for the relevant banners (mobile vs. desktop)
-        if(isMobile == slots[i]['isMobile']) {
-          var ga_slot = googletag.defineSlot(path,sizes,identifier).addService(googletag.pubads());
-          ga_slots.push(ga_slot);
-        } else {
-          ga_slots.push({});
-        }
-      }
-
-
-
-      googletag.pubads().enableSingleRequest();
-      googletag.pubads().disableInitialLoad(); // We load the ads with refresh()
-      //googletag.pubads().collapseEmptyDivs();
-
-      checkAddBlocker()
-      addLoadEventListener()
-
-      googletag.enableServices();
-
-      // Call display when the page is loaded.
-      window.addEventListener('load', function() {
-        // Tell google to display slots
-        for (i = 0; i < slots.length; i++) {
-          googletag.cmd.push(function () {
-            googletag.display(slots[i]['identifier']);
-          });
-        }
-
-        // Wait before we refresh the ads.
-        setTimeout(function() {
-          for (i = 0; i < slots.length; i++) {
-            googletag.cmd.push(function () {
-              googletag.pubads().refresh([ga_slots[i]]);
-            });
-          }
-        }, 100);
-      }, false);
-    });
-  </script>
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]-->
+<script src ="//www.dr.dk/global-navigation/topbarbundle.js"></script>    <!-- DRC head end -->
+    <!-- TMS start -->
+    <script>
+    window.dataLayer = window.dataLayer || {};
+    window.dataLayer.content = {"content":{"publishTime":"2014-12-03T14:25:00+00:00","sites":[[{"siteName":"Viden","siteUrn":"urn:dr:drupal:site:e6e773ad-03dc-4fcb-9419-c31ca30a6a8e"},{"siteName":"Nyheder","siteUrn":"urn:dr:drupal:site:cb361b66-3a32-4cea-ae23-3c1eba2db3fd"}]],"title":"Viden","type":"front_page","typeUrn":"urn:dr:content:type:front-page","urlCanonical":"https:\/\/www.dr.dk\/nyheder\/viden","urn":"urn:dr:drupal:front-page:1b1dfe37-a9b8-487c-943e-58e31b8f437b","version":"6348546"},"presentation":{"publisher":"DR, DR BYEN, Emil Holms Kanal 20, DK-0999 K\u00f8benhavn C, tlf.: +45 35 20 30 40","section":"Nyheder","site":"Viden","system":"1=Drupal","title":"Viden","urn":"urn:dr:drupal:front-page:1b1dfe37-a9b8-487c-943e-58e31b8f437b","version":"6348546"}};
+</script>
+    <!-- TMS end -->
+    <!-- Drupal Styles start -->
+    <link type="text/css" rel="stylesheet" href="/sites/all/themes/custom/dr_phoenix/assets/build/styles/main.css?p70mkh" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/all/themes/custom/dr_phoenix/assets/build/sites/viden/styles/site.css?p70mkh" media="all" />
+    <!-- Drupal Styles end -->
   </head>
-  <body class="front page-taxonomy-term" ><noscript><img src="http://videnskab.tns-gallup.dk/j0=,,,;+,cp=videnskab/videnskab+url=https://videnskab.dk/;;;" alt=""/></noscript>
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WTWCDT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;j.type='text/javascript';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WTWCDT');</script>
-<!-- End Google Tag Manager -->
-        <div class="page-wrapper">
 
-      <div role="banner" class="marketing page-wrapper__header">
-      <div class="inner">
+  <body class="node-type-front-page" >
+    <!--googleoff: index-->
+    <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>    <div class="site-wrapper">
+  <div class="site-content container">
+              <div class="site-id row" role="presentation">
+  <h1 class="col-sm-offset-1 col-sm-10 col-xs-12"><a href="/nyheder/viden" title="Gå til forsiden af Viden" class="site-title">Viden</a></h1>
+  </div>
+<div class="row">
+  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+          <div class="dr-list-themer dr-list-themer-teaser section mute-heading top-teaser-a">
+    <div class="row">
 
-
-
-
-
-
-<div class="banner top" id="div-gpt-ad-taxonomy/term/111-0" style="width:930px;height:180px;margin:0 auto;">
-    <!--<script type='text/javascript'>
-        //googletag.cmd.push(function () {
-        //    googletag.display('div-gpt-ad-taxonomy/term/111-0');
-        //});
-    </script> -->
-</div>
+      <div class="span-8 col-xs-12">
+        <div class="item">
+          <div class="row">
 
 
-<div class="banner left" id="div-gpt-ad-taxonomy/term/111-1" style="width:160px;height:600px;margin:0 auto;">
-    <!--<script type='text/javascript'>
-        //googletag.cmd.push(function () {
-        //    googletag.display('div-gpt-ad-taxonomy/term/111-1');
-        //});
-    </script> -->
-</div>
+                          <div class="col-xs-12">
 
 
-<div class="banner left sticky" id="div-gpt-ad-taxonomy/term/111-2" style="width:160px;height:600px;margin:0 auto;">
-    <!--<script type='text/javascript'>
-        //googletag.cmd.push(function () {
-        //    googletag.display('div-gpt-ad-taxonomy/term/111-2');
-        //});
-    </script> -->
-</div>
+<a href="https://www.dr.dk/nyheder/viden/teknologi/andreas-mogensens-rumkapsel-landet-i-danmark-det-er-sindssygt-hvor-er-det">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/teknologi/andreas-mogensens-rumkapsel-landet-i-danmark-det-er-sindssygt-hvor-er-det" class="image-wrap  ratio-16-9"  data-width="4672" data-height="3192" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/04/11/scanpix-20150912-071533-2.jpg" >
 
-
-<div class="banner right" id="div-gpt-ad-taxonomy/term/111-3" style="width:160px;height:600px;margin:0 auto;">
-    <!--<script type='text/javascript'>
-        //googletag.cmd.push(function () {
-        //    googletag.display('div-gpt-ad-taxonomy/term/111-3');
-        //});
-    </script> -->
-</div>
-
-
-<div class="banner right sticky" id="div-gpt-ad-taxonomy/term/111-4" style="width:160px;height:600px;margin:0 auto;">
-    <!--<script type='text/javascript'>
-        //googletag.cmd.push(function () {
-        //    googletag.display('div-gpt-ad-taxonomy/term/111-4');
-        //});
-    </script> -->
-</div>
-
-
-
-
-        </div>
-      </div>
-    </divs>
-
-      <header role="banner" class="header page-wrapper__header">
-      <div class="inner">
-
-<div class="branding-block">
-
-
-
-
-  <div id="header">
-  <div class="section clearfix">
-    <div id="logo-title">
-
-              <a href="/" title="Hjem" rel="home" id="logo"><img src="https://videnskab.dk/profiles/videnskab/themes/custom/videnskab_theme/logo.png" alt="Hjem" /></a>
-
-      <div id="name-and-slogan">
-                              <h1 id="site-name">
-              <a href="/" title="Hjem" rel="home"><span>Videnskab.dk</span></a>
-            </h1>
-
-                  <div id="site-slogan"> </div>
-              </div> <!-- /name-and-slogan -->
-    </div> <!-- /logo-title -->
-
-  </div> <!-- /section -->
-</div> <!-- /header -->
-
+  <noscript>
+    <img  width="4672" height="3192" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/04/11/scanpix-20150912-071533-2.jpg" alt="scanpix-20150912-071533-2.jpg" title="scanpix-20150912-071533-2.jpg" />
+  </noscript>
 
   </div>
-
-        <input class="mobile-menu-checkbox" type="checkbox" id="menu">
-        <label class="mobile-menu-label" for="menu">Menu</label>
-        <div class="bottom-line">
-
-<div class="main-menu">
-
-
-
-
-  <ul class="menu"><li class="first"><a href="/topic/krop-sundhed" title="">Krop &amp; Sundhed</a></li>
-<li><a href="/topic/kultur-samfund" title="">Kultur &amp; Samfund</a></li>
-<li><a href="/topic/naturvidenskab" title="">Naturvidenskab</a></li>
-<li class="last"><a href="/topic/teknologi-innovation" title="">Teknologi &amp; Innovation</a></li>
-</ul>
-
-  </div>
-
-
-
-
-
-
-  <div class="search-box-header">
-  <span class="toggle-search"></span>
-  <div class="overlay">
-    <form action="/s" method="get">
-      <label for="query">Søg</label>
-      <input name="query" value="" placeholder="Indtast søgeord" />
-      <input type="submit" value="Søg">
-      <span class="close">Luk</span>
-    </form>
-  </div>
-</div>
-
-
-
-
-<div class="service-menu">
-
-
-
-
-  <ul class="menu"><li class="first"><a href="http://videnskab.dk/skole" title="">For skoler</a></li>
-<li><a href="/side/nyhedsbrev" title="">Nyhedsbrev</a></li>
-<li class="last"><a href="/om" title="">Om Videnskab.dk</a></li>
-</ul>
-
-  </div>
-
-
-
-
-
-
-  <ul class="social-media social-media--header">
-    <li class="social-media__entry">
-    <a target="_blank" class="social-media__link social-media__link--facebook" href="https://www.facebook.com/videnskabdk/?fref=ts">Facebook</a>
-  </li>
-    <li class="social-media__entry">
-    <a target="_blank" class="social-media__link social-media__link--twitter" href="https://twitter.com/videnskabdk?lang=da">Twitter</a>
-  </li>
-  </ul>
-
-
-
-
-<div class="selected-topics-menu">
-
-
-
-
-  <ul class="menu"><li class="first"><a href="/forskerzonen" title="">ForskerZonen</a></li>
-<li class="last"><a href="/topic/sporg-videnskaben" title="">Spørg Videnskaben</a></li>
-</ul>
-
-  </div>
-
-        </div>
-      </div>
-    </header>
-
-      <main role="main" class="main page-wrapper__body">
-      <div class="inner">
-
-
-
-
-
-  <div         class="page-wrapper frontpage frontpage--a clearfix">
-
-	      <section class="frontpage-region frontpage-region--a">
-									                <div class="frontpage-region--0 inner region two_thirds">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a">
-        <a class="article-content__image-link" href="/naturvidenskab/hvad-er-tid">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-120362" class="file file-image file-image-jpeg">
-  <picture >
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/tid-ur.jpg?itok=kU8bB7Sp&amp;timestamp=1523454231 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/tid-ur.jpg?itok=XykNRba_&amp;timestamp=1523454231 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/tid-ur.jpg?itok=fagpb8NJ&amp;timestamp=1523454231 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/tid-ur.jpg?itok=fagpb8NJ&amp;timestamp=1523454231" alt="" title="" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-fysik"><a href="/topic/fysik">Fysik</a></div>
-
-      <div class="field-item odd field-item-spoerg-videnskaben"><a href="/topic/sporg-videnskaben">Spørg Videnskaben</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/naturvidenskab/hvad-er-tid">Hvad er tid?</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--1 inner region one_third">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a">
-        <a class="article-content__image-link" href="/krop-sundhed/et-godt-raad-hoering-paa-christiansborg-boer-ikke-goere-dig-bange-for-mobilstraaling">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-153060" class="file file-image file-image-jpeg">
-  <picture  title="Kun usikre studier har antydet, at stråling fra mobiltelefoner kan være skadelig. Dog bør du begrænse tiden med mobilen oppe for øret og bruge headset, når du kan komme til det - for en sikkerheds skyld. (Foto: Shutterstock)">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/mobilstraaling_fare_kraeft_forskning_hoering.jpg?itok=TtbcD2MW&amp;timestamp=1523455969 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/mobilstraaling_fare_kraeft_forskning_hoering.jpg?itok=WhAr1MJH&amp;timestamp=1523455969 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/mobilstraaling_fare_kraeft_forskning_hoering.jpg?itok=fjIcK9px&amp;timestamp=1523455969 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/mobilstraaling_fare_kraeft_forskning_hoering.jpg?itok=fjIcK9px&amp;timestamp=1523455969" alt="Mobilstråling, kræft, høring" title="Kun usikre studier har antydet, at stråling fra mobiltelefoner kan være skadelig. Dog bør du begrænse tiden med mobilen oppe for øret og bruge headset, når du kan komme til det - for en sikkerheds skyld. (Foto: Shutterstock)" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-kraeft"><a href="/topic/kraeft">Kræft</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/krop-sundhed/et-godt-raad-hoering-paa-christiansborg-boer-ikke-goere-dig-bange-for-mobilstraaling">Et godt råd: Høring på Christiansborg bør ikke gøre dig bange for mobilstråling</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--2 inner region one_third">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a">
-        <a class="article-content__image-link" href="/krop-sundhed/nyt-stort-studie-hjernerystelse-oeger-risikoen-for-demens-markant">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-153039" class="file file-image file-image-jpeg">
-  <picture  title="Husk hjelmen: Jo flere gange man slår hovedet, desto højere er risikoen for at få demens.">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/hjernerystelse.jpg?itok=XVkgNeQs&amp;timestamp=1523366941 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/hjernerystelse.jpg?itok=Wc753CET&amp;timestamp=1523366941 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/hjernerystelse.jpg?itok=1BIlrRly&amp;timestamp=1523366941 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/hjernerystelse.jpg?itok=1BIlrRly&amp;timestamp=1523366941" alt="hjernerystelse demens dement hovedskader kraniebrud hovedtraumer" title="Husk hjelmen: Jo flere gange man slår hovedet, desto højere er risikoen for at få demens." />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-hjernen"><a href="/topic/hjernen">Hjernen</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/krop-sundhed/nyt-stort-studie-hjernerystelse-oeger-risikoen-for-demens-markant">Nyt stort studie: Hjernerystelse øger risikoen for demens markant</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--3 inner region one_third">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a forskerzonen-article">
-    <div class="forskerzonen-label">ForskerZonen</div>    <a class="article-content__image-link" href="/naturvidenskab/forskere-soeger-efter-forgiftede-rovfugles-sidste-maaltid">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-151581" class="file file-image file-image-jpeg">
-  <picture  title="De fire forgiftede glenter fundet i juni 2017 nær Silkeborg. Blev de forgiftet eller ej? (Foto: DTU Veterinærinstittutet)">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/foto_1_1.jpg?itok=2ph-fNwK&amp;timestamp=1523274324 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/foto_1_1.jpg?itok=MIRcG5Rv&amp;timestamp=1523274324 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/foto_1_1.jpg?itok=GfaC5xnm&amp;timestamp=1523274324 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/foto_1_1.jpg?itok=GfaC5xnm&amp;timestamp=1523274324" alt="Glenter_forgiftning_død_obduktion" title="De fire forgiftede glenter fundet i juni 2017 nær Silkeborg. Blev de forgiftet eller ej? (Foto: DTU Veterinærinstittutet)" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-dyr-og-planter"><a href="/topic/dyr-planter">Dyr &amp; planter</a></div>
-
-      <div class="field-item odd field-item-forskerzonen"><a href="/forskerzonen">ForskerZonen</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/naturvidenskab/forskere-soeger-efter-forgiftede-rovfugles-sidste-maaltid">Forskere søger efter forgiftede rovfugles sidste måltid</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--4 inner region one_third">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a forskerzonen-article">
-    <div class="forskerzonen-label">ForskerZonen</div>    <a class="article-content__image-link" href="/kultur-samfund/professor-naturvidenskab-uddannelserne-boer-ogsaa-undervise-i-humaniora">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-151795" class="file file-image file-image-jpeg">
-  <picture  title="Den britiske fysiker og forfatter C.P. Snow beskrev kløften mellem den klassisk-humanistiske og den teknisk-videnskabelige kultur, der i dag synes endnu dybere forankret i den akademiske verden. Det skal vi lave om på, mener forfatteren.">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/steam.jpg?itok=0VmWWkFD&amp;timestamp=1521470769 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/steam.jpg?itok=PBB_W055&amp;timestamp=1521470769 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/steam.jpg?itok=6mcDkILZ&amp;timestamp=1521470769 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/steam.jpg?itok=6mcDkILZ&amp;timestamp=1521470769" alt="STEM STEAM uddannelse humaniora kunst etik videnskab forskning ansvar samfund geoengineering  udfordringer algoritmer genredigering CRiSPR gene drives spørgsmål problemstillinger livsforandrende " title="Den britiske fysiker og forfatter C.P. Snow beskrev kløften mellem den klassisk-humanistiske og den teknisk-videnskabelige kultur, der i dag synes endnu dybere forankret i den akademiske verden. Det skal vi lave om på, mener forfatteren." />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-etik-og-filosofi"><a href="/topic/etik-filosofi">Etik &amp; Filosofi</a></div>
-
-      <div class="field-item odd field-item-forskerzonen"><a href="/forskerzonen">ForskerZonen</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/kultur-samfund/professor-naturvidenskab-uddannelserne-boer-ogsaa-undervise-i-humaniora">Professor: Naturvidenskabelige uddannelser bør undervise i humaniora</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--5 inner region one_third">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a">
-        <a class="article-content__image-link" href="/krop-sundhed/folk-med-soed-tand-gen-har-mindre-risiko-for-fedme">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-153032" class="file file-image file-image-jpeg">
-  <picture  title="Mennesker med variationen i FGF-21-genet spiser mere sukker. Måske fordi deres hjerne ikke får besked om at stoppe med at indtage sukker. (Foto: Shutterstock)">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/shutterstock_419927140.jpg?itok=qyVV3NLY&amp;timestamp=1523363273 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/shutterstock_419927140.jpg?itok=uqR1MMLL&amp;timestamp=1523363273 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/shutterstock_419927140.jpg?itok=fDliufS4&amp;timestamp=1523363273 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/shutterstock_419927140.jpg?itok=fDliufS4&amp;timestamp=1523363273" alt="genetik genvariant sukker fedme " title="Mennesker med variationen i FGF-21-genet spiser mere sukker. Måske fordi deres hjerne ikke får besked om at stoppe med at indtage sukker. (Foto: Shutterstock)" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-genetik"><a href="/topic/genetik">Genetik</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/krop-sundhed/folk-med-soed-tand-gen-har-mindre-risiko-for-fedme">Folk med sød tand-gen har mindre risiko for fedme</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--6 inner region one_third">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a forskerzonen-article">
-    <div class="forskerzonen-label">ForskerZonen</div>    <a class="article-content__image-link" href="/kultur-samfund/begraensning-af-indvandring-skubbede-hvide-indfoedte-ned-i-lavtloensjob">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-151818" class="file file-image file-image-jpeg">
-  <picture  title="Statue of Liberty er blevet et symbol på den nye verdens &amp;#039;gyldne dør&amp;#039; til bedre økonomiske muligheder for fattige indvandrere. Hvad kan vi lære af USA&amp;#039;s immigrationspolitik?">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/immigrationsbegraensninger_1.jpg?itok=53stzNpw&amp;timestamp=1521235322 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/immigrationsbegraensninger_1.jpg?itok=bDaVL5lc&amp;timestamp=1521235322 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/immigrationsbegraensninger_1.jpg?itok=lAalrQgz&amp;timestamp=1521235322 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/immigrationsbegraensninger_1.jpg?itok=lAalrQgz&amp;timestamp=1521235322" alt="immigration begrænsning kvotesystem Donald Trump immigrationspolitik lovgivning politik 1920&amp;#039;erne USA sydeuropæere Rusland Storbritannien etnicitet arbejdsmarked arbejdstager konkurrerer etniske grupper Calvin Coolidge" title="Statue of Liberty er blevet et symbol på den nye verdens &amp;#039;gyldne dør&amp;#039; til bedre økonomiske muligheder for fattige indvandrere. Hvad kan vi lære af USA&amp;#039;s immigrationspolitik?" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-forskerzonen"><a href="/forskerzonen">ForskerZonen</a></div>
-
-      <div class="field-item odd field-item-politik"><a href="/topic/politik">Politik</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/kultur-samfund/begraensning-af-indvandring-skubbede-hvide-indfoedte-ned-i-lavtloensjob">Begrænsning af indvandring skubbede hvide indfødte ned i lavtlønsjob</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--7 inner region one_third">
-
-
-
-
-
-  <div class="view view-most-readed-articles-for-front-page view-id-most_readed_articles_for_front_page view-display-id-panel_pane_1 google-analytics-reports-summary view-most-viewed-articles view-dom-id-0457b3a8241d0915b0b746c828969eb4">
-            <h2>Mest læste</h2>
-
-
-      <section>
-              <article class="first odd">
-
-
-<div class="views-field views-field-title">
-    <span class="field-content">
-        <a href="/kultur-samfund/eske-willerslev-har-opdigtet-sin-tvillingebror">
-            Eske Willerslev har opdigtet sin tvillingebror        </a>
-    </span>
-</div>
-      </article>
-            <article class="even">
-
-
-<div class="views-field views-field-title">
-    <span class="field-content">
-        <a href="/kultur-samfund/5-ting-du-skal-vide-om-vikingetiden">
-            5 ting, du skal vide om vikingetiden        </a>
-    </span>
-</div>
-      </article>
-            <article class="odd">
-
-
-<div class="views-field views-field-title">
-    <span class="field-content">
-        <a href="/krop-sundhed/kolesterol-beskytter-maaske-mod-infektionssygdomme">
-            Kolesterol kan have en overset effekt på dit helbred        </a>
-    </span>
-</div>
-      </article>
-            <article class="even">
-
-
-<div class="views-field views-field-title">
-    <span class="field-content">
-        <a href="/kultur-samfund/koebenhavnske-kvinder-fik-malket-bryster-i-1500-tallet">
-            Københavnske kvinder fik malket bryster i 1500-tallet        </a>
-    </span>
-</div>
-      </article>
-            <article class="odd">
-
-
-<div class="views-field views-field-title">
-    <span class="field-content">
-        <a href="/kultur-samfund/et-vaeld-af-nye-fund-i-vestsjaelland-forundrer-arkaeologer">
-            Et væld af nye fund i Vestsjælland forundrer arkæologer        </a>
-    </span>
-</div>
-      </article>
-            <article class="last even">
-
-
-<div class="views-field views-field-title">
-    <span class="field-content">
-        <a href="/teknologi-innovation/nu-styrter-kinesisk-rumstation-ned-her-er-hvad-du-boer-vide">
-            Nu styrter kinesisk rumstation ned: Her er, hvad du bør vide        </a>
-    </span>
-</div>
-      </article>
-  </section>
-
-
-
-
-
-  </div>
-
-
-
-                </div>
-									      </section>
-	      <section class="frontpage-region frontpage-region--b">
-									                <div class="frontpage-region--8 inner region full">
-
-
-
-
-
-
-    <article  class="node node-other-media">
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics other-media__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-andre-skriver"><a href="/topic/andre-skriver">Andre skriver</a></div>
-
-      <div class="field-item odd field-item-geologi"><a href="/topic/geologi">Geologi</a></div>
-
-      <div class="field-item even field-item-sport"><a href="/topic/sport">Sport</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title other-media__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/naturvidenskab/forsker-maaler-effekterne-af-messi-og-springsteen-udloeser-jordskaelv-naar-de-spiller">Forsker måler effekterne af Messi og Springsteen: Udløser jordskælv, når de spiller</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--9 inner region half">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a">
-        <a class="article-content__image-link" href="/naturvidenskab/hvorfor-hoerer-vi-aldrig-fra-et">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-152425" class="file file-image file-image-jpeg">
-  <picture  title="Er rummets andre intelligente liv allerede uddøde, eller er de ikke udviklet endnu?">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/admiring_the_galaxy.jpg?itok=EU1vh22J&amp;timestamp=1521026684 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/admiring_the_galaxy.jpg?itok=jRq9FDQS&amp;timestamp=1521026684 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/admiring_the_galaxy.jpg?itok=DbH2oigZ&amp;timestamp=1521026684 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/admiring_the_galaxy.jpg?itok=DbH2oigZ&amp;timestamp=1521026684" alt="et rummet intelligent liv beboelig planeter" title="Er rummets andre intelligente liv allerede uddøde, eller er de ikke udviklet endnu?" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-astronomi"><a href="/topic/astronomi">Astronomi</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/naturvidenskab/hvorfor-hoerer-vi-aldrig-fra-et">Hvorfor hører vi aldrig fra E.T.?</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--10 inner region half">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a">
-        <a class="article-content__image-link" href="/naturvidenskab/forhistorisk-bille-opkaldt-efter-broedrene-willerslev">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-153031" class="file file-image file-image-jpeg">
-  <picture >
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/willerslev-bille.jpg?itok=TVNUR_no&amp;timestamp=1523355419 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/willerslev-bille.jpg?itok=-iA9jIHK&amp;timestamp=1523355419 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/willerslev-bille.jpg?itok=yjGtFY9S&amp;timestamp=1523355419 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/willerslev-bille.jpg?itok=yjGtFY9S&amp;timestamp=1523355419" alt="willerslev bille" title="" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-dyr-og-planter"><a href="/topic/dyr-planter">Dyr &amp; planter</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/naturvidenskab/forhistorisk-bille-opkaldt-efter-broedrene-willerslev">Forhistorisk bille opkaldt efter brødrene Willerslev</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-									      </section>
-	      <section class="frontpage-region frontpage-region--c">
-									                <div class="frontpage-region--11 inner region one_third">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a">
-        <a class="article-content__image-link" href="/krop-sundhed/mand-indlagt-verdens-staerkeste-chili-gav-ham-tordenskraldshovedpine">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-153019" class="file file-image file-image-jpeg">
-  <picture  title="Carolina Reaper, der kan kendes på sin rynkede form med en spids tip, har været anerkendt som verdens stærkeste chili i Guiness&amp;#039; rekordbog siden 2013. (Foto: Shutterstock.)">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/shutterstock_315584618.jpg?itok=AeC3DPU-&amp;timestamp=1523279193 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/shutterstock_315584618.jpg?itok=i2QvbYba&amp;timestamp=1523279193 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/shutterstock_315584618.jpg?itok=DhlIxM0K&amp;timestamp=1523279193 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/shutterstock_315584618.jpg?itok=DhlIxM0K&amp;timestamp=1523279193" alt="Mand spise verdens stærkeste chili syg indlagt hjernen blodårer trække sig sammen" title="Carolina Reaper, der kan kendes på sin rynkede form med en spids tip, har været anerkendt som verdens stærkeste chili i Guiness&amp;#039; rekordbog siden 2013. (Foto: Shutterstock.)" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-kroppen"><a href="/topic/kroppen">Kroppen</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/krop-sundhed/mand-indlagt-verdens-staerkeste-chili-gav-ham-tordenskraldshovedpine">Mand indlagt: Verdens stærkeste chili gav ham ’tordenskraldshovedpine’</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--12 inner region one_third">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a forskerzonen-article">
-    <div class="forskerzonen-label">ForskerZonen</div>    <a class="article-content__image-link" href="/naturvidenskab/forsker-fokus-paa-enkelte-fund-af-mikroplastik-overskygger-et-meget-stoerre-problem">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-152959" class="file file-image file-image-jpeg">
-  <picture >
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/articles_inline/shutterstock_556842991.jpg?itok=LpjlgTzf&amp;timestamp=1523000445 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/articles_inline/shutterstock_556842991.jpg?itok=Ozl1w-_Y&amp;timestamp=1523000445 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/articles_inline/shutterstock_556842991.jpg?itok=z1jZYh-j&amp;timestamp=1523000445 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/articles_inline/shutterstock_556842991.jpg?itok=z1jZYh-j&amp;timestamp=1523000445" alt="" title="" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-forskerzonen"><a href="/forskerzonen">ForskerZonen</a></div>
-
-      <div class="field-item odd field-item-miljoe"><a href="/topic/miljo">Miljø</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/naturvidenskab/forsker-fokus-paa-enkelte-fund-af-mikroplastik-overskygger-et-meget-stoerre-problem">Forsker: Fokus på enkelte fund af mikroplastik overskygger et meget større problem</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--13 inner region one_third">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a article-content--gallery">
-        <a class="article-content__image-link" href="/teknologi-innovation/top-10-curiositys-bedste-billeder-fra-mars">
-          <div class="icons">
-
-                <span class="icons__item icons__item--gallery">
-
-        </span>
-              </div>
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-152388" class="file file-image file-image-jpeg">
-  <picture  title="En selfie fra &amp;#039;Buckskin&amp;#039;, hvor Curiosity opsamlede sin syvende boreprøve. Klik på billedet for at åbne galleriet eller nyde billedet i høj opløsning. ">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/pia19807_flat-horizon-monday.jpg?itok=clIW5POX&amp;timestamp=1522746099 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/pia19807_flat-horizon-monday.jpg?itok=09qeGDZW&amp;timestamp=1522746099 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/pia19807_flat-horizon-monday.jpg?itok=0gv242xD&amp;timestamp=1522746099 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/pia19807_flat-horizon-monday.jpg?itok=0gv242xD&amp;timestamp=1522746099" alt="curiosity mars rummet rumfart selfie vand prøver opsamle" title="En selfie fra &amp;#039;Buckskin&amp;#039;, hvor Curiosity opsamlede sin syvende boreprøve. Klik på billedet for at åbne galleriet eller nyde billedet i høj opløsning. " />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-astronomi"><a href="/topic/astronomi">Astronomi</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/teknologi-innovation/top-10-curiositys-bedste-billeder-fra-mars">Top 10: Curiositys bedste billeder fra Mars</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--14 inner region full">
-
-
-
-
-
-
-
-<article  class="node node-other-media">
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics other-media__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-andre-skriver"><a href="/topic/andre-skriver">Andre skriver</a></div>
-
-      <div class="field-item odd field-item-dyr-og-planter"><a href="/topic/dyr-planter">Dyr &amp; planter</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title other-media__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/naturvidenskab/forhistorisk-delfinlignende-oegle-var-paa-stoerrelse-med-en-blaahval">Forhistorisk delfinlignende øgle var på størrelse med en blåhval</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--15 inner region one_third">
-
-
-
-
-
-
-
-<article  class="node node-other-media">
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics other-media__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-andre-skriver"><a href="/topic/andre-skriver">Andre skriver</a></div>
-
-      <div class="field-item odd field-item-evolution"><a href="/topic/evolution">Evolution</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title other-media__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/krop-sundhed/loeftede-oejenbryn-saadan-har-evolutionen-givet-os-ansigtsudtryk">Løftede øjenbryn: Derfor har evolutionen givet os ansigtsudtryk</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--16 inner region one_third">
-
-
-
-
-
-
-
-<article  class="node node-other-media">
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics other-media__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-andre-skriver"><a href="/topic/andre-skriver">Andre skriver</a></div>
-
-      <div class="field-item odd field-item-arkaeologi"><a href="/topic/arkaeologi">Arkæologi</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title other-media__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/naturvidenskab/finger-fossil-afsloerer-kom-mennesket-til-europa-og-asien-foer-antaget">Finger-fossil afslører: Kom mennesket til Europa og Asien før antaget?</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--17 inner region one_third">
-
-
-
-
-
-
-
-<article  class="node node-other-media">
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics other-media__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-andre-skriver"><a href="/topic/andre-skriver">Andre skriver</a></div>
-
-      <div class="field-item odd field-item-bag-om-forskningen"><a href="/topic/bag-om-forskningen">Bag om forskningen</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title other-media__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/kultur-samfund/her-er-de-fem-hoejeste-loenninger-paa-koebenhavns-universitet">Her er de fem højeste lønninger på Københavns Universitet</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-									      </section>
-	      <section class="frontpage-region frontpage-region--d">
-									                <div class="frontpage-region--18 inner region half">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a">
-        <a class="article-content__image-link" href="/krop-sundhed/kolesterol-beskytter-maaske-mod-infektionssygdomme">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-153015" class="file file-image file-image-jpeg">
-  <picture  title="Forskning i HDL-kolesterol har været fokuseret på hjerte-kar-sygdomme. Men nu viser et nyt studie, at det måske har betydning for immunsystemet. Den sammenhæng har ikke været undersøgt før. (Foto: Shutterstock)">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/ldl_kolesterol_infektionssygdomme.jpg?itok=dC6dG8vB&amp;timestamp=1523265553 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/ldl_kolesterol_infektionssygdomme.jpg?itok=RguZ6cgl&amp;timestamp=1523265553 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/ldl_kolesterol_infektionssygdomme.jpg?itok=ZwkApY2F&amp;timestamp=1523265553 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/ldl_kolesterol_infektionssygdomme.jpg?itok=ZwkApY2F&amp;timestamp=1523265553" alt="HDL kolesterol det gode kolesterol beskytter mod infektionssygdomme" title="Forskning i HDL-kolesterol har været fokuseret på hjerte-kar-sygdomme. Men nu viser et nyt studie, at det måske har betydning for immunsystemet. Den sammenhæng har ikke været undersøgt før. (Foto: Shutterstock)" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-sygdomme"><a href="/topic/sygdomme">Sygdomme</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/krop-sundhed/kolesterol-beskytter-maaske-mod-infektionssygdomme">Kolesterol kan have en overset effekt på dit helbred</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--19 inner region half">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a forskerzonen-article">
-    <div class="forskerzonen-label">ForskerZonen</div>    <a class="article-content__image-link" href="/kultur-samfund/fem-ting-du-skal-vide-om-overvaagning">
-          <div class="icons">
-                <span class="icons__item icons__item--video">
-
-        </span>
-
-              </div>
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-153007" class="file file-image file-image-png">
-  <picture >
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/5_ting_du_skal_vide_om_overvaagning_video_videnskab_0.png?itok=y-u0NBH7&amp;timestamp=1523261000 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/5_ting_du_skal_vide_om_overvaagning_video_videnskab_0.png?itok=s7Se0cLf&amp;timestamp=1523261000 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/5_ting_du_skal_vide_om_overvaagning_video_videnskab_0.png?itok=fBwmdz9P&amp;timestamp=1523261000 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/5_ting_du_skal_vide_om_overvaagning_video_videnskab_0.png?itok=fBwmdz9P&amp;timestamp=1523261000" alt="5_ting_du_skal_vide_om_overvaagning_video_videnskab" title="" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-forskerzonen"><a href="/forskerzonen">ForskerZonen</a></div>
-
-      <div class="field-item odd field-item-samfund"><a href="/topic/samfund">Samfund</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/kultur-samfund/fem-ting-du-skal-vide-om-overvaagning">Fem ting, du skal vide om overvågning</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-									      </section>
-	      <section class="frontpage-region frontpage-region--e">
-									                <div class="frontpage-region--20 inner region one_third">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a">
-        <a class="article-content__image-link" href="/kultur-samfund/bedstemoedre-behandler-depression-i-zimbabwe">
-          <div class="icons">
-                <span class="icons__item icons__item--video">
-
-        </span>
-
-              </div>
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-153028" class="file file-image file-image-png">
-  <picture >
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/bedstemoedre_behandle_depression_ted_talk.png?itok=3NlIOVJi&amp;timestamp=1523347543 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/bedstemoedre_behandle_depression_ted_talk.png?itok=jXFiiHg3&amp;timestamp=1523347543 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/bedstemoedre_behandle_depression_ted_talk.png?itok=1OYVJ-8G&amp;timestamp=1523347543 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/bedstemoedre_behandle_depression_ted_talk.png?itok=1OYVJ-8G&amp;timestamp=1523347543" alt="" title="" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-psykologi"><a href="/topic/psykologi">Psykologi</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/kultur-samfund/bedstemoedre-behandler-depression-i-zimbabwe">TED Talk: Bedstemødre behandler depression i Zimbabwe</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--21 inner region one_third">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a forskerzonen-article">
-    <div class="forskerzonen-label">ForskerZonen</div>    <a class="article-content__image-link" href="/naturvidenskab/afrika-er-langsomt-ved-at-spraekke-i-to-dele">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-153000" class="file file-image file-image-png">
-  <picture  title="Jorden er evig foranderlig, selvom mange af forandringerne er så godt som umærkelige for os. Det er pladetektonikken et godt eksempel på. En pludseligt opstået kæmperevne i Kenya er en påmindelse om de enorme trækkræfter, der arbejder under jordoverfladen">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/file-20180329-189813-qaz48d.png?itok=vvQ8ncJx&amp;timestamp=1523263280 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/file-20180329-189813-qaz48d.png?itok=adlYxkg2&amp;timestamp=1523263280 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/file-20180329-189813-qaz48d.png?itok=nD-TL-BO&amp;timestamp=1523263280 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/file-20180329-189813-qaz48d.png?itok=nD-TL-BO&amp;timestamp=1523263280" alt="Afrika kontinentaldrift pladetektonik erosion Kenya erodering den Østafrikanske Rift forkastningszone lithosfære geologiske sprækkedannelser vulkansk seismisk aktivitet jordskælv konvektionsboble topografi astenosfære magma " title="Jorden er evig foranderlig, selvom mange af forandringerne er så godt som umærkelige for os. Det er pladetektonikken et godt eksempel på. En pludseligt opstået kæmperevne i Kenya er en påmindelse om de enorme trækkræfter, der arbejder under jordoverfladen" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-forskerzonen"><a href="/forskerzonen">ForskerZonen</a></div>
-
-      <div class="field-item odd field-item-geologi"><a href="/topic/geologi">Geologi</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/naturvidenskab/afrika-er-langsomt-ved-at-spraekke-i-to-dele">Afrika er langsomt ved at sprække i to dele</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--22 inner region one_third">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a">
-        <a class="article-content__image-link" href="/naturvidenskab/sover-myrer">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-152618" class="file file-image file-image-jpeg">
-  <picture  title="Denne myre ligner i hvert fald en, der tager sig en &amp;#039;myrfar&amp;#039;. (Foto: Shutterstock)">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/myre_sove_insekter.jpg?itok=L4mNkQXp&amp;timestamp=1521643625 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/myre_sove_insekter.jpg?itok=dVdwwtOm&amp;timestamp=1521643625 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/myre_sove_insekter.jpg?itok=_tWnVJz3&amp;timestamp=1521643625 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/myre_sove_insekter.jpg?itok=_tWnVJz3&amp;timestamp=1521643625" alt="sover myrer insekter" title="Denne myre ligner i hvert fald en, der tager sig en &amp;#039;myrfar&amp;#039;. (Foto: Shutterstock)" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-dyr-og-planter"><a href="/topic/dyr-planter">Dyr &amp; planter</a></div>
-
-      <div class="field-item odd field-item-spoerg-videnskaben"><a href="/topic/sporg-videnskaben">Spørg Videnskaben</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/naturvidenskab/sover-myrer">Sover myrer?</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--23 inner region full">
-
-<div id="frontpage-sprog-videnskaben" class="frontpage-sprog-videnskaben">
-
-
-
-
-  <div class="view view-latest-articles view-id-latest_articles view-display-id-panel_pane_1 view-dom-id-f5c3420baff8ad55ad5079d0bd3d9498">
-            <h2><a href="//videnskab.dk/topic/sporg-videnskaben">Seneste Spørg Videnskaben</a></h2>
-
-
-
-      <section>
-
-
-
-  <div class="views-field views-field-nothing latest-article-wrapper">        <span class="field-content"><a href="/naturvidenskab/hvad-er-tid">
-<img src="https://videnskab.dk/sites/default/files/article_media/tid-ur.jpg">
 </a>
-<a href="/naturvidenskab/hvad-er-tid">Hvad er tid?</a></span>  </div>
-
-
-  <div class="views-field views-field-nothing latest-article-wrapper">        <span class="field-content"><a href="/naturvidenskab/sover-myrer">
-<img src="https://videnskab.dk/sites/default/files/article_media/myre_sove_insekter.jpg">
-</a>
-<a href="/naturvidenskab/sover-myrer">Sover myrer?</a></span>  </div>
-
-
-  <div class="views-field views-field-nothing latest-article-wrapper">        <span class="field-content"><a href="/krop-sundhed/hvorfor-goer-foraaret-os-saa-kaade-og-glade">
-<img src="https://videnskab.dk/sites/default/files/article_media/foraar_glad_kaad_energi_0.jpg">
-</a>
-<a href="/krop-sundhed/hvorfor-goer-foraaret-os-saa-kaade-og-glade">Hvorfor gør foråret os så kåde og glade?</a></span>  </div>
-  </section>
-
-
-
-
-
-  </div>
-
-
-
-</div>
-                </div>
-									      </section>
-	      <section class="frontpage-region frontpage-region--f">
-									                <div class="frontpage-region--24 inner region full">
-
-
-
-
-<section>
-  <div class="partner-highlight-top">
-  <div class="partner-highlight-by">
-    Indhold fra vores partner Bestil en Forsker  </div>
-  <div class="partner-highlight-name">
-      </div>
-</div>
-<!--<section>-->
-</section>
-
-
-
-
-<div class="partner-highlight-view">
-
-
-
-
-
-
-
-<article>
-    <div class="partner-highlight-article-media">
-      <a href="/naturvidenskab/vilde-floder-og-et-jysk-nildelta-tag-med-paa-rejse-til-fortidens-danmark">
-        <img src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/22_mio_gammel_flodkanal_foto_erik_skovbjerg_rasmussen_2.jpg?itok=vIhhbz-l"/>
-      </a>
-    </div>
-    <div class="partner-highlight-article-title">
-      <a href="/naturvidenskab/vilde-floder-og-et-jysk-nildelta-tag-med-paa-rejse-til-fortidens-danmark">Vilde floder og et jysk Nildelta: Tag med på rejse til fortidens Danmark</a>    </div>
-</article>
-
-
-
-
-<article>
-    <div class="partner-highlight-article-media">
-      <a href="/krop-sundhed/hvordan-bekaemper-vi-bedst-type-2-diabetes">
-        <img src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/articles_inline/shutterstock_134079275.jpg?itok=aOChPfzT"/>
-      </a>
-    </div>
-    <div class="partner-highlight-article-title">
-      <a href="/krop-sundhed/hvordan-bekaemper-vi-bedst-type-2-diabetes">Hvordan bekæmper vi bedst type 2-diabetes?</a>    </div>
-</article>
-
-
-
-
-<article>
-    <div class="partner-highlight-article-media">
-      <a href="/kultur-samfund/nu-kan-du-booke-et-foredrag-med-en-forsker-helt-gratis">
-        <img src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/bestil_en_forsker.jpg?itok=gwpyrJx_"/>
-      </a>
-    </div>
-    <div class="partner-highlight-article-title">
-      <a href="/kultur-samfund/nu-kan-du-booke-et-foredrag-med-en-forsker-helt-gratis">Sidste chance: Book et foredrag med en forsker – helt gratis!</a>    </div>
-</article>
-
-
-
-
-<article>
-    <div class="partner-highlight-article-media">
-      <a href="/teknologi-innovation/smartphone-sensor-kan-opspore-beskidt-vand">
-        <img src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/colisensor_1.jpg?itok=eDtogPA1"/>
-      </a>
-    </div>
-    <div class="partner-highlight-article-title">
-      <a href="/teknologi-innovation/smartphone-sensor-kan-opspore-beskidt-vand">Smartphone-sensor kan opspore beskidt vand</a>    </div>
-</article>
-
-
-
-
-<article>
-    <div class="partner-highlight-article-media">
-      <a href="/kultur-samfund/historien-om-den-danske-kirkesalme">
-        <img src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/articles_inline/grundtvig_0.jpg?itok=NDVptr2g"/>
-      </a>
-    </div>
-    <div class="partner-highlight-article-title">
-      <a href="/kultur-samfund/historien-om-den-danske-kirkesalme">Historien om den danske kirkesalme</a>    </div>
-</article>
-
-
-
-
-  </div>
-
-                </div>
-														                <div class="frontpage-region--25 inner region half">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a">
-        <a class="article-content__image-link" href="/teknologi-innovation/asim-skal-snart-monteres-paa-iss-og-saa-bliver-det-spaendende">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-152889" class="file file-image file-image-jpeg">
-  <picture  title="Det danske rumprojekt ASIM blev succesfuldt sendt afsted med en genbrugt Falcon 9 raket fra den amerikanske rumvirksomhed SpaceX">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/first_reflight_-_01_img_6067.jpg?itok=umis2teh&amp;timestamp=1522770440 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/first_reflight_-_01_img_6067.jpg?itok=PIvNxiCR&amp;timestamp=1522770440 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/first_reflight_-_01_img_6067.jpg?itok=KsjJsDmG&amp;timestamp=1522770440 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/first_reflight_-_01_img_6067.jpg?itok=KsjJsDmG&amp;timestamp=1522770440" alt="ASIM SpaceX raket" title="Det danske rumprojekt ASIM blev succesfuldt sendt afsted med en genbrugt Falcon 9 raket fra den amerikanske rumvirksomhed SpaceX" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-rumfart"><a href="/topic/rumfart">Rumfart</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/teknologi-innovation/asim-skal-snart-monteres-paa-iss-og-saa-bliver-det-spaendende">ASIM skal snart monteres på ISS: »Og så bliver det spændende«</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--26 inner region half">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a forskerzonen-article">
-    <div class="forskerzonen-label">ForskerZonen</div>    <a class="article-content__image-link" href="/navne">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-143939" class="file file-image file-image-jpeg">
-  <picture  title="Hvem har fået et professorat, hvem har fået en stor bevilling til at forske i hvad, og hvem har vundet en særlig pris? Det får du fremover overblik over her. (Foto: Shutterstock)">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/nyt_om_navne_forskere.jpg?itok=yobYC42x&amp;timestamp=1504973464 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/nyt_om_navne_forskere.jpg?itok=mP3rpcdV&amp;timestamp=1504973464 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/nyt_om_navne_forskere.jpg?itok=MHSIQxqS&amp;timestamp=1504973464 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/nyt_om_navne_forskere.jpg?itok=MHSIQxqS&amp;timestamp=1504973464" alt="Nyt om navne forskerZonen overblik" title="Hvem har fået et professorat, hvem har fået en stor bevilling til at forske i hvad, og hvem har vundet en særlig pris? Det får du fremover overblik over her. (Foto: Shutterstock)" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-bag-om-forskningen"><a href="/topic/bag-om-forskningen">Bag om forskningen</a></div>
-
-      <div class="field-item odd field-item-forskerzonen"><a href="/forskerzonen">ForskerZonen</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/navne">Nyt om navne: KU-forsker citeret mere end 200.000 gange</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--27 inner region full">
-
-
-
-
-<section>
-  <div class="field field-field-researcher-zone-title">
-    <div class="field-items">
-          <div class="field-item even">ForskerZonen</div>
-      </div>
-</div>
-</section>
-
-
-
-
-<div class="forskerzonen-teasers-front">
-
-
-
-
-
-
-<article>
-    <div class="forskerzonen-author-avatar">
-        <a href="author/author/2842">
-                        <img src="https://videnskab.dk/profiles/videnskab/themes/custom/videnskab_theme/src/images/forskerzonen-avatar.png"/>
-                  </a>
-    </div>
-
-    <div class="forskerzonen-author-teaser">
-        <div class="field_teaser_title">
-            <a href="/kultur-samfund/personer-med-handicap-kan-hjaelpe-med-at-loese-manglen-paa-arbejdskraft">
-              Personer med handicap kan hjælpe med at løse manglen på arbejdskraft            </a>
-        </div>
-
-        <h3 class="author-profile__card__name">
-          Finn Amby        </h3>
-
-        <div class="author-profile__card__title">
-            <div class="author__title">
-              Adjunkt (ph.d.) på VIA University College i Aarhus            </div>
-        </div>
-    </div>
-
-</article>
-
-<article>
-    <div class="forskerzonen-author-avatar">
-        <a href="author/author/2885">
-                        <img src="https://videnskab.dk/profiles/videnskab/themes/custom/videnskab_theme/src/images/forskerzonen-avatar.png"/>
-                  </a>
-    </div>
-
-    <div class="forskerzonen-author-teaser">
-        <div class="field_teaser_title">
-            <a href="/naturvidenskab/fremtidens-gadelamper-kan-vaere-oplyst-af-alger">
-              Fremtidens gadelamper kan være oplyst af alger            </a>
-        </div>
-
-        <h3 class="author-profile__card__name">
-          Kristian Ejlsted        </h3>
-
-        <div class="author-profile__card__title">
-            <div class="author__title">
-              MSc. i Bioteknologi            </div>
-        </div>
-    </div>
-
-</article>
-
-<article>
-    <div class="forskerzonen-author-avatar">
-        <a href="author/author/2303">
-                        <img src="https://videnskab.dk/sites/default/files/styles/media_thumbnail/public/author_media/lise_g.jpg?itok=OFzsGtmV"/>
-                  </a>
-    </div>
-
-    <div class="forskerzonen-author-teaser">
-        <div class="field_teaser_title">
-            <a href="/krop-sundhed/vaegttab-kan-beskytte-overvaegtige-drenge-mod-type-2-diabetes">
-              Vægttab kan beskytte drenge med overvægt mod type 2-diabetes            </a>
-        </div>
-
-        <h3 class="author-profile__card__name">
-          Lise Geisler Bjerregaard        </h3>
-
-        <div class="author-profile__card__title">
-            <div class="author__title">
-              Postdoc ved Center for Klinisk Forskning og Forebyggelse, Bispebjerg og Frederiksberg Hospital            </div>
-        </div>
-    </div>
-
-</article>
-
-<article>
-    <div class="forskerzonen-author-avatar">
-        <a href="author/author/1122">
-                        <img src="https://videnskab.dk/profiles/videnskab/themes/custom/videnskab_theme/src/images/forskerzonen-avatar.png"/>
-                  </a>
-    </div>
-
-    <div class="forskerzonen-author-teaser">
-        <div class="field_teaser_title">
-            <a href="/kultur-samfund/naar-regeringen-trumfer-den-danske-model-med-lovindgreb">
-              Sådan kan regeringen gribe ind i en storkonflikt            </a>
-        </div>
-
-        <h3 class="author-profile__card__name">
-          Laust Høgedahl        </h3>
-
-        <div class="author-profile__card__title">
-            <div class="author__title">
-              postdoc, Institut for Statskundskab, Aalborg Universitet            </div>
-        </div>
-    </div>
-
-</article>
-
-
-  </div>
-
-                </div>
-														                <div class="frontpage-region--28 inner region full">
-
-
-
-
-<section>
-  <div class="field field-field-html-box">
-    <div class="field-items">
-          <div class="field-item even"><link href="//videnskab.dk/path/to/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-<div style="border-width: 3px; border-style: solid; border-color: #f2f2f2; background: #f2f2f2;">
-<img src="//videnskab.dk/sites/default/files/styles/columns_12_12_desktop/public/videnskab.dk_podcast_ikon_fontawesome.png" style="float:right;width:75px; margin:18px;">
-<h2 style="margin:18px;">Lyt på Videnskab.dk! </h2>
-<h3 style="font-size:16px; margin:0px 0px 0px 18px;">
-Hver uge laver vi digital radio, der udkommer i form af en podcast, hvor vi går i dybden med aktuelle emner fra forskningens verden. Du kan lytte til den nyeste podcast i afspilleren herunder eller via en podcast-app på din smartphone.<br><br>
-Har du en iPhone eller iPad, kan du finde vores podcasts i <a href="https://itunes.apple.com/dk/podcast/videnskab-dk/id1193135586?mt=2">iTunes</a> og afspille dem i Apples <a href="https://itunes.apple.com/dk/app/podcasts/id525463029?mt=8">podcast app</a>. Bruger du Android, kan du med fordel bruge <a href="https://play.google.com/store/apps/details?id=com.soundcloud.android&amp;hl=da">SoundClouds app</a>.<br>
-Du kan se alle vores podcast-artikler <a href="//videnskab.dk/podcast" target="_blank">her</a> eller se hele playlisten <a href="https://soundcloud.com/videnskabdk" target="_blank">på SoundCloud</a></h3>
-<iframe allow="autoplay" frameborder="no" height="166" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/425164113&amp;color=%23ff0000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true" width="100%"></iframe>
-
-</div>
-<br>
-<p><a href="//videnskab.dk/kurser" target="_Blank"><img src="//videnskab.dk/sites/default/files/styles/columns_12_12_desktop/public/sharp_vi_tilbyder_banner_til_forsiden_paa_videnskab.dk_.png" width="100%"></a></p></div>
-      </div>
-</div>
-</section>
-
-
-
-                </div>
-									      </section>
-	      <section class="frontpage-region frontpage-region--h">
-									                <div class="frontpage-region--29 inner region full">
-
-<div id="frontpage-tema-wrapper" class="frontpage-tema-wrapper">
-<div class="front-tema-title">
-
-
-
-<section>
-  <div class="field field-field-tema">
-      <div class="field-label">Tema:&nbsp;</div>
-    <div class="field-items">
-          <div class="field-item even">Red Verden</div>
-      </div>
-</div>
-</section>
-
-
-  </div>
-
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a">
-        <a class="article-content__image-link" href="/kultur-samfund/videnskabdk-vil-redde-verden-vil-du-hjaelpe-os">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-149801" class="file file-image file-image-png">
-  <picture  title="Giv os dit indspark til, hvad vi skal fokusere på, i kommentarfeltet under artiklen eller i vores nyoprettede Facebook-gruppe Videnskab.dk – RED VERDEN. (Foto: NASA)">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/jorden_nasa.png?itok=4sltl4Ey&amp;timestamp=1511513802 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/jorden_nasa.png?itok=OYqqT2Ra&amp;timestamp=1511513802 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/jorden_nasa.png?itok=kSM6U0ds&amp;timestamp=1511513802 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/jorden_nasa.png?itok=kSM6U0ds&amp;timestamp=1511513802" alt="Red Verden, Videnskab.dk, projekt, gymnasier, sult, klima, uddannelse, løsninger, konstruktiv journalistiik" title="Giv os dit indspark til, hvad vi skal fokusere på, i kommentarfeltet under artiklen eller i vores nyoprettede Facebook-gruppe Videnskab.dk – RED VERDEN. (Foto: NASA)" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-jorden"><a href="/topic/jorden">Jorden</a></div>
-
-      <div class="field-item odd field-item-red-verden"><a href="/topic/red-verden">Red Verden</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/kultur-samfund/videnskabdk-vil-redde-verden-vil-du-hjaelpe-os">Videnskab.dk vil redde verden – vil du hjælpe os?</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-    <article  class="node node-article article-content--teaser article-content--teaser--a forskerzonen-article">
-    <div class="forskerzonen-label">ForskerZonen</div>    <a class="article-content__image-link" href="/naturvidenskab/mikroplast-i-havet-10-ting-du-boer-undgaa-for-at-afhjaelpe-forureningen">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-151819" class="file file-image file-image-jpeg">
-  <picture  title="Listen over kilder til plastik i havet er lang. En stor del af dette plastik bliver med tiden nedbrudt til mikroplastik, men mikroplast udledes også til havet på andre måder, fra eksempelvis tekstiler, vejdæk, maling og tennisbolde.">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/mikroplastik_1.jpg?itok=BzOyrKue&amp;timestamp=1518851019 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/mikroplastik_1.jpg?itok=TxhOaMWJ&amp;timestamp=1518851019 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/mikroplastik_1.jpg?itok=Ouju_nEx&amp;timestamp=1518851019 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/mikroplastik_1.jpg?itok=Ouju_nEx&amp;timestamp=1518851019" alt="Mikroplastik havet forurening cigaretskod, vaskekapsler opvasketabs mikroperler kosmetik plejeprodukter tennisbolde glitter bildæk nedbrudt syntetsik beklædning teposer papkopper maling tiltag problem fødekæde fisk dyr mennesker indånde " title="Listen over kilder til plastik i havet er lang. En stor del af dette plastik bliver med tiden nedbrudt til mikroplastik, men mikroplast udledes også til havet på andre måder, fra eksempelvis tekstiler, vejdæk, maling og tennisbolde." />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-forskerzonen"><a href="/forskerzonen">ForskerZonen</a></div>
-
-      <div class="field-item odd field-item-havet"><a href="/topic/havet">Havet</a></div>
-
-      <div class="field-item even field-item-red-verden"><a href="/topic/red-verden">Red Verden</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/naturvidenskab/mikroplast-i-havet-10-ting-du-boer-undgaa-for-at-afhjaelpe-forureningen">Mikroplast: 10 ting, du bør undgå for at redde havene</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-    <article  class="node node-article article-content--teaser article-content--teaser--a">
-        <a class="article-content__image-link" href="/kultur-samfund/kan-atomkraft-redde-verden">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-152453" class="file file-image file-image-jpeg">
-  <picture  title="Det er slet ikke til at komme uden om atomkraft, hvis man spørger flere af de forskere, som Videnskab.dk har talt med. ">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/atomkraftvaerker.jpg?itok=ctNCURe0&amp;timestamp=1522148683 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/atomkraftvaerker.jpg?itok=f9t-TgPA&amp;timestamp=1522148683 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/atomkraftvaerker.jpg?itok=REJpa_o4&amp;timestamp=1522148683 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/atomkraftvaerker.jpg?itok=REJpa_o4&amp;timestamp=1522148683" alt="Atomkraft kernekraft kraftværker atomkraftværker kernekraftværker energi atomenergi" title="Det er slet ikke til at komme uden om atomkraft, hvis man spørger flere af de forskere, som Videnskab.dk har talt med. " />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-energi"><a href="/topic/energi">Energi</a></div>
-
-      <div class="field-item odd field-item-red-verden"><a href="/topic/red-verden">Red Verden</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/kultur-samfund/kan-atomkraft-redde-verden">Kan atomkraft redde verden?</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-</div>
-                </div>
-									      </section>
-	      <section class="frontpage-region frontpage-region--i">
-									                <div class="frontpage-region--30 inner region half">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a">
-        <a class="article-content__image-link" href="/teknologi-innovation/livestream-kl-2230-se-opsendelsen-af-danmarks-stoerste-rumprojekt-asim">
-          <div class="icons">
-                <span class="icons__item icons__item--video">
-
-        </span>
 
               </div>
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-152825" class="file file-image file-image-jpeg">
-  <picture  title="Space X">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/spacex_0.jpg?itok=_2j3JxvM&amp;timestamp=1522267312 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/spacex_0.jpg?itok=jsntmfzA&amp;timestamp=1522267312 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/spacex_0.jpg?itok=4o9NWYGv&amp;timestamp=1522267312 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/spacex_0.jpg?itok=4o9NWYGv&amp;timestamp=1522267312" alt="Space X" title="Space X" />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-rumfart"><a href="/topic/rumfart">Rumfart</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/teknologi-innovation/livestream-kl-2230-se-opsendelsen-af-danmarks-stoerste-rumprojekt-asim">ASIM er i rummet! Se eller gense opsendelsen af Danmarks største rumprojekt</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-														                <div class="frontpage-region--31 inner region half">
-
-
-
-
-
-
-    <article  class="node node-article article-content--teaser article-content--teaser--a">
-        <a class="article-content__image-link" href="/kultur-samfund/historiker-varslet-storkonflikt-kan-blive-skelsaettende">
-
-    <div class="field field-field-teaser-media">
-    <div class="field-items">
-          <div class="field-item even"><div id="file-152463" class="file file-image file-image-jpeg">
-  <picture  title="Offentligt ansatte kan snart ryge ud i en storkonflikt med deres arbejdsgivere.">
-<!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_desktop/public/article_media/strejke.jpg?itok=Mfu1GYzk&amp;timestamp=1521207265 1x" media="(min-width: 980px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_tablet/public/article_media/strejke.jpg?itok=bUYt64fg&amp;timestamp=1521207265 1x" media="(min-width: 760px)" />
-<source srcset="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/strejke.jpg?itok=voF0OlCb&amp;timestamp=1521207265 1x" media="(min-width: 0px)" />
-<!--[if IE 9]></video><![endif]-->
-<img  src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/article_media/strejke.jpg?itok=voF0OlCb&amp;timestamp=1521207265" alt="strejke lockout storkonflikt arbejdsmarkedsmodel overenskomst septemberforlig arbejdsmarked fagbevægelsen  " title="Offentligt ansatte kan snart ryge ud i en storkonflikt med deres arbejdsgivere." />
-</picture></div>
-</div>
-      </div>
-</div>
-  </a>
-
-  <div class="article-content__sideline-wrapper">
-    <div class="field field-field-topics article-content__topics">
-    <div class="field-items">
-
-      <div class="field-item even field-item-arbejde"><a href="/topic/arbejde">Arbejde</a></div>
-      </div>
-</div>
-<div class="field field-field-teaser-title article-content__teaser-title">
-    <div class="field-items">
-          <div class="field-item even"><a href="/kultur-samfund/historiker-varslet-storkonflikt-kan-blive-skelsaettende">Varslet storkonflikt kan blive skelsættende</a></div>
-      </div>
-</div>
-  </div>
-
-</article>
-
-
-
-                </div>
-									      </section>
-	      <section class="frontpage-region frontpage-region--footer">
-									                <div class="frontpage-region--32 inner region full">
-
-
-
-
-
-  <a href="/s?query=&amp;sort_by=field_publication_date&amp;sort_order=DESC">Se flere artikler</a>
-
-
-
-<div class="events-overview event-teasers-highlight">
-
-
-        <h2 class="pane-title">Det sker</h2>
-
-
-  <div class="view view-events view-id-events view-display-id-panel_pane_4 view-dom-id-1f589ec232214cbd18fce969b6e609ba">
-
-
-
-      <section>
-              <article class="first last odd">
-
-  <div class="views-field views-field-field-teaser-image eventlist-thumb">        <div class="field-content"><a href="/node/26944"><img src="https://videnskab.dk/sites/default/files/styles/article_teasers_mobile/public/shutterstock_1020536842.jpg?itok=KtQEjjUZ" width="400" height="225" /></a></div>  </div>
-  <div class="views-field views-field-field-date-and-time-1 eventlist-datestamp">        <div class="field-content"><span class="date-display-single">11/04</span> kl. <span class="date-display-single">19:00</span></div>  </div>
-  <div class="views-field views-field-title eventlist-title">        <span class="field-content"><a href="/node/26944">Vin &amp; Videnskab - Virusser og vacciner</a></span>  </div>
-  <div class="views-field views-field-field-author eventlist-speaker">    <span class="views-label views-label-field-author">Oplægsholder</span>    <div class="field-content"></div>  </div>
-  <div class="views-field views-field-field-address eventlist-address">    <span class="views-label views-label-field-address">Adresse</span>    <div class="field-content">Chr. Hansen Auditoriet på Center for Sundhed og Samfund, Bartholinsgade 4A, 1356 København K</div>  </div>
-  <div class="views-field views-field-nothing">        <span class="field-content"><div class="in-collaboration">
-   <div class="collaboration-label">I samarbejde med</div> <div class="p-container">
-
-   </div>
-</div></span>  </div>
-  <div class="views-field views-field-view-node eventlist-goto">        <span class="field-content"><a href="/node/26944">Læs mere</a></span>  </div>    </article>
-  </section>
-
-
-
-
-
-  </div>
-
-
-  </div>
-
-
-<div class="event-teasers">
-
-
-        <h2 class="pane-title">Se flere events</h2>
-
-
-  <div class="view view-events view-id-events view-display-id-panel_pane_5 view-dom-id-a6bf91039240ccc9799895e3f0d680fc">
-
-
-
-      <section>
-              <article class="first odd">
-
-  <div class="views-field views-field-field-date-and-time event-teasers-date">        <div class="field-content"><span class="date-display-single">12/04</span></div>  </div>
-  <div class="views-field views-field-title event-teasers-title">        <span class="field-content"><a href="/node/26824">Vartovs Videnskab - Altings begyndelse</a></span>  </div>    </article>
-            <article class="even">
-
-  <div class="views-field views-field-field-date-and-time event-teasers-date">        <div class="field-content"><span class="date-display-single">19/04</span></div>  </div>
-  <div class="views-field views-field-title event-teasers-title">        <span class="field-content"><a href="/node/26945">Vin &amp; Videnskab - Sidste nyt fra rummet - meteoritter og exoplaneter</a></span>  </div>    </article>
-            <article class="last odd">
-
-  <div class="views-field views-field-field-date-and-time event-teasers-date">        <div class="field-content"><span class="date-display-single">20/04</span></div>  </div>
-  <div class="views-field views-field-title event-teasers-title">        <span class="field-content"><a href="/node/27357">Forskningens Døgn 2018</a></span>  </div>    </article>
-  </section>
-
-
-
-
-<div class="more-link">
-  <a href="/events">
-    Se flere events  </a>
-</div>
-
-
-  </div>
-
-
-  </div>
-
-                </div>
-									      </section>
-	      <section class="frontpage-region frontpage-region--banner_a">
-									                <div class="frontpage-region--33 inner region full">
-
-
-
-
-
-
-<div class="banner full-width front" id="div-gpt-ad-taxonomy/term/111-10" style="width:930px;height:180px;margin:0 auto;">
-    <!--<script type='text/javascript'>
-        //googletag.cmd.push(function () {
-        //    googletag.display('div-gpt-ad-taxonomy/term/111-10');
-        //});
-    </script> -->
-</div>
-
-
-
-
-                </div>
-									      </section>
-
-</div>
-
-
-      </div>
-    </main>
-
-      <footer role="contentinfo" class="footer page-wrapper__footer">
-      <div class="inner top">
-
-
-
-
-
-  <div class="newsletter-signup">
-	<h2 class="pane-title">Tilmeld dig vores nyhedsbrev</h2>
-  <p>Tilmeld dig vores gratis nyhedsbrev. Det udkommer alle hverdage samt søndage med seneste nyt fra videnskabens verden.</p>
-
-  <div class="newsletter-form">
-
-		<div id="mc_embed_signup">
-		<form action="//videnskab.us2.list-manage.com/subscribe/post?u=e3c3e7ba63a293af2fbe0e734&amp;id=d2f5c83eb4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-		    <div id="mc_embed_signup_scroll">
-
-		<div class="mc-field-group">
-			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="E-mail">
-		</div>
-			<div id="mce-responses" class="clear">
-				<div class="response" id="mce-error-response" style="display:none"></div>
-				<div class="response" id="mce-success-response" style="display:none"></div>
-			</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-		    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e3c3e7ba63a293af2fbe0e734_d2f5c83eb4" tabindex="-1" value=""></div>
-		    <div class="clear"><input type="submit" value="Tilmeld" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-		    </div>
-		</form>
-		</div>
-
-  </div>
-</div>
-
-
-
-      </div>
-      <div class="inner main">
-
-<div class="footer-menu column">
-
-
-        <h2 class="pane-title">Om Videnskab.dk</h2>
-
-
-  <ul class="menu"><li class="first"><a href="/side/redaktionelt-program" title="">Redaktionelt program</a></li>
-<li><a href="/side/redaktionen" title="">Find medarbejder</a></li>
-<li><a href="/side/partnere" title="">Partnere</a></li>
-<li><a href="/side/rettigheder" title="">Rettigheder</a></li>
-<li><a href="/side/privatlivspolitik" title="">Privatlivspolitik</a></li>
-<li><a href="/side/vilkaar-for-kommentarer-paa-videnskabdk" title="">Vilkår for kommentarer</a></li>
-<li><a href="http://videnskab.dk/side/nyhedsbrev" title="Nyhedsbrev">Nyhedsbrev</a></li>
-<li><a href="http://videnskab.dk/side/kurser-i-kommunikation-og-formidling" title="Kurser i kommunikation og formidling">Kurser</a></li>
-<li><a href="http://videnskab.dk/side/annoncer-paa-videnskabdk" title="Annoncér på Videnskab.dk">Annoncer</a></li>
-<li class="last"><a href="javascript:CookieConsent.show()">Cookies</a></li>
-</ul>
-
-  </div>
-
-
-
-
-
-
-  <div class="contact-block column">
-  <h2 class="pane-title">Kontakt</h2>
-  <p>
-    Ansvarshavende chefredaktør:<br/><br/>
-    Vibeke Hjortlund<br/>
-    <a href="mailto:redaktion@videnskab.dk" target="_top"><u>redaktion@videnskab.dk</u></a><br/><br/>
-  </p>
-  <p>
-    Carl Jacobsens Vej 16, <br/>
-    opg. 16, 2. sal<br/>
-    2500 Valby<br/>
-  </p>
-  <p>Tlf:  70 70 17 88</p>
-</div>
-
-
-      </div>
-      <div class="inner bottom">
-
-
-
-
-
-  <ul class="social-media social-media--footer">
-    <li class="social-media__entry">
-    <a target="_blank" class="social-media__link social-media__link--facebook" href="https://www.facebook.com/videnskabdk/?fref=ts">Facebook</a>
-  </li>
-    <li class="social-media__entry">
-    <a target="_blank" class="social-media__link social-media__link--twitter" href="https://twitter.com/videnskabdk?lang=da">Twitter</a>
-  </li>
-  </ul>
-
-
-
-
-
-
-
-
-  <script id="CookieConsent" src="https://policy.cookieinformation.com/uc.js" data-cbid="f7ba3171-40be-4081-8f4a-6d15a661feb6" type="text/javascript"></script>
-
-
-        <div class="to-top-wrapper">
-          <span class="scroll-up">To Top</span>
+                        <div class="col-xs-12">
+                              <a href="/nyheder/viden/teknologi/andreas-mogensens-rumkapsel-landet-i-danmark-det-er-sindssygt-hvor-er-det" class="heading-xxlarge">Andreas Mogensens rumkapsel landet i Danmark: &#039;Det er for sindssygt. Hvor er det sejt&#039;</a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-11T21:21:00+02:00">
+                      kl. 21.21                    </time>
+                  </span>
+
+                                            <p>
+                  Danmarks Tekniske Museum har købt kapslen af russerne efter to års forhandlinger.                </p>
+                                                      </div>
+          </div>
         </div>
       </div>
-    </footer>
 
+      <div class="span-8 col-xs-6 col-sm-12 break">
+        <div class="item image-3">
+          <div class="row">
+
+
+                          <div class="col-xs-12 col-sm-3">
+
+
+<a href="https://www.dr.dk/nyheder/viden/teknologi/zuckerberg-ristet-godt-igennem-bekraefter-massiv-dataindsamling">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/teknologi/zuckerberg-ristet-godt-igennem-bekraefter-massiv-dataindsamling" class="image-wrap  ratio-16-9"  data-width="4848" data-height="3255" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/04/11/scanpix-20180411-184107-6.jpg" >
+
+  <noscript>
+    <img  width="4848" height="3255" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/04/11/scanpix-20180411-184107-6.jpg" alt="scanpix-20180411-184107-6.jpg" title="scanpix-20180411-184107-6.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12 col-sm-9">
+                              <a href="/nyheder/viden/teknologi/zuckerberg-ristet-godt-igennem-bekraefter-massiv-dataindsamling" class="heading-large">Zuckerberg ristet godt igennem: Bekræfter massiv dataindsamling</a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-11T21:15:00+02:00">
+                      kl. 21.15                    </time>
+                  </span>
+
+                                            <p>
+                  Facebook indsamler data om dig, når du ikke er logget ind - og indsamler data om folk der slet ikke har en Facebook-profil. Det bekræfter Facebooks direktør.                </p>
+                                                      </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-4 col-xs-6 break">
+        <div class="item boxed no-image">
+          <div class="row">
+
+
+                        <div class="col-xs-12">
+                              <a href="/nyheder/viden/qwerty-og-123456-vores-kodeord-til-hjemmesider-kan-snart-vaere-fortid" class="heading-large">Qwerty og 123456: Vores kodeord til hjemmesider kan snart være fortid</a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-11T20:18:00+02:00">
+                      kl. 20.18                    </time>
+                  </span>
+
+                                            <p>
+                  Nye standarder for kodeord og sikkerhed kan gøre dine genbrugte kodeord overflødige.                </p>
+                                                      </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-4 col-xs-6">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/klima/klimaforandringernes-skueplads-3-danske-projekter-overvaager-smeltende-arktis">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/klima/klimaforandringernes-skueplads-3-danske-projekter-overvaager-smeltende-arktis" class="image-wrap  ratio-16-9"  data-width="1915" data-height="849" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/04/10/arktis_2.png" >
+
+  <noscript>
+    <img  width="1915" height="849" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/04/10/arktis_2.png" alt="arktis_2.png" title="arktis_2.png" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12">
+                              <a href="/nyheder/viden/klima/klimaforandringernes-skueplads-3-danske-projekter-overvaager-smeltende-arktis" class="heading-medium"> Klimaforandringernes skueplads: 3 danske projekter overvåger smeltende Arktis </a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-11T19:32:00+02:00">
+                      kl. 19.32                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-8 col-xs-6 col-sm-12 break">
+        <div class="item image-3">
+          <div class="row">
+
+
+                          <div class="col-xs-12 col-sm-3">
+
+
+<a href="https://www.dr.dk/nyheder/viden/teknologi/smartphones-hollywood-film-og-busruter-kunstig-intelligens-bliver-brugt">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/teknologi/smartphones-hollywood-film-og-busruter-kunstig-intelligens-bliver-brugt" class="image-wrap  ratio-16-9"  data-width="4000" data-height="3000" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/04/11/scanpix-20180321-203058-1.jpg" >
+
+  <noscript>
+    <img  width="4000" height="3000" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/04/11/scanpix-20180321-203058-1.jpg" alt="scanpix-20180321-203058-1.jpg" title="scanpix-20180321-203058-1.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12 col-sm-9">
+                              <a href="/nyheder/viden/teknologi/smartphones-hollywood-film-og-busruter-kunstig-intelligens-bliver-brugt" class="heading-large">Smartphones, Hollywood-film og busruter - kunstig intelligens bliver brugt overalt</a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-11T19:16:00+02:00">
+                      kl. 19.16                    </time>
+                  </span>
+
+                                            <p>
+                  Der er stor forskel på kunstig intelligens i virkeligheden og på film.                 </p>
+                                                      </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+      </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="dr-list-themer dr-list-themer-list section dr-list-icon secondary">
+          <h2>
+        Viden          <span>Seneste Nyt</span>                      </h2>
+            <ol>
+                      <li class="item">
+                    <div class="row">
+                                                          <div class="col-xs-12">
+                                                        <a href="/nyheder/viden/teknologi/andreas-mogensens-rumkapsel-landet-i-danmark-det-er-sindssygt-hvor-er-det" class="dr-icon-link-boxed heading-small">Andreas Mogensens rumkapsel landet i Danmark: &#039;Det er for sindssygt. Hvor er det sejt&#039;</a>                                          <span class="metainfo">
+                <time datetime="2018-04-11T21:21:00+02:00">
+                kl. 21.21                </time>
+              </span>
+                                                                  </div>
+                                </div>
+                  </li>
+                      <li class="item">
+                    <div class="row">
+                                                          <div class="col-xs-12">
+                                                        <a href="/nyheder/viden/teknologi/zuckerberg-ristet-godt-igennem-bekraefter-massiv-dataindsamling" class="dr-icon-link-boxed heading-small">Zuckerberg ristet godt igennem: Bekræfter massiv dataindsamling</a>                                          <span class="metainfo">
+                <time datetime="2018-04-11T21:15:00+02:00">
+                kl. 21.15                </time>
+              </span>
+                                                                  </div>
+                                </div>
+                  </li>
+                      <li class="item">
+                    <div class="row">
+                                                          <div class="col-xs-12">
+                                                        <a href="/nyheder/viden/qwerty-og-123456-vores-kodeord-til-hjemmesider-kan-snart-vaere-fortid" class="dr-icon-link-boxed heading-small">Qwerty og 123456: Vores kodeord til hjemmesider kan snart være fortid</a>                                          <span class="metainfo">
+                <time datetime="2018-04-11T20:18:00+02:00">
+                kl. 20.18                </time>
+              </span>
+                                                                  </div>
+                                </div>
+                  </li>
+                      <li class="item">
+                    <div class="row">
+                                                          <div class="col-xs-12">
+                                                        <a href="/nyheder/viden/klima/klimaforandringernes-skueplads-3-danske-projekter-overvaager-smeltende-arktis" class="dr-icon-link-boxed heading-small"> Klimaforandringernes skueplads: 3 danske projekter overvåger smeltende Arktis </a>                                          <span class="metainfo">
+                <time datetime="2018-04-11T19:32:00+02:00">
+                kl. 19.32                </time>
+              </span>
+                                                                  </div>
+                                </div>
+                  </li>
+                      <li class="item">
+                    <div class="row">
+                                                          <div class="col-xs-12">
+                                                        <a href="/nyheder/viden/teknologi/smartphones-hollywood-film-og-busruter-kunstig-intelligens-bliver-brugt" class="dr-icon-link-boxed heading-small">Smartphones, Hollywood-film og busruter - kunstig intelligens bliver brugt overalt</a>                                          <span class="metainfo">
+                <time datetime="2018-04-11T19:16:00+02:00">
+                kl. 19.16                </time>
+              </span>
+                                                                  </div>
+                                </div>
+                  </li>
+                      <li class="item">
+                    <div class="row">
+                                                          <div class="col-xs-12">
+                                                        <a href="/nyheder/viden/teknologi/en-af-87-millioner-zuckerberg-blev-selv-ramt-af-facebook-skandalen" class="dr-icon-link-boxed heading-small">En af 87 millioner: Zuckerberg blev selv ramt af Facebook-skandalen</a>                                          <span class="metainfo">
+                <time datetime="2018-04-11T18:04:00+02:00">
+                kl. 18.04                </time>
+              </span>
+                                                                  </div>
+                                </div>
+                  </li>
+                      <li class="item">
+                    <div class="row">
+                                                          <div class="col-xs-12">
+                                                        <a href="/nyheder/viden/kroppen/ny-forskning-slikmunde-har-mindre-fedt-i-kroppen" class="dr-icon-link-boxed heading-small">Ny forskning: Slikmunde har mindre fedt i kroppen </a>                                          <span class="metainfo">
+                <time datetime="2018-04-11T17:01:00+02:00">
+                kl. 17.01                </time>
+              </span>
+                                                                  </div>
+                                </div>
+                  </li>
+                      <li class="item">
+                    <div class="row">
+                                                          <div class="col-xs-12">
+                                                        <a href="https://www.dr.dk/live/nyheder/live/2766818" class="dr-icon-link-boxed heading-small">LIVE TV Zuckerberg: Vi lytter ikke med på dine telefonsamtaler</a>                                          <span class="metainfo">
+                <time datetime="2018-04-11T15:55:00+02:00">
+                kl. 15.55                </time>
+              </span>
+                                                                  </div>
+                                </div>
+                  </li>
+                      <li class="item">
+                    <div class="row">
+                                                          <div class="col-xs-12">
+                                                        <a href="/nyheder/viden/teknologi/klar-til-anden-halvleg-kan-kongressen-ryste-en-selvsikker-zuckerberg" class="dr-icon-link-boxed heading-small">Klar til anden halvleg: Kan Kongressen ryste en selvsikker Zuckerberg?</a>                                          <span class="metainfo">
+                <time datetime="2018-04-11T15:11:00+02:00">
+                kl. 15.11                </time>
+              </span>
+                                                                  </div>
+                                </div>
+                  </li>
+                      <li class="item">
+                    <div class="row">
+                                                          <div class="col-xs-12">
+                                                        <a href="/nyheder/viden/mogensens-rumkapsel-kan-snart-ses-pa-teknisk-museum" class="dr-icon-link-boxed heading-small">Mogensens rumkapsel kan snart ses på teknisk museum</a>                                          <span class="metainfo">
+                <time datetime="2018-04-11T10:50:00+02:00">
+                kl. 10.50                </time>
+              </span>
+                                                                  </div>
+                                </div>
+                  </li>
+          </ol>
+          <a href="http://www.dr.dk/nyheder/allenyheder/viden" class="dr-link-readmore">Se alle artikler fra viden</a>
+          </div>
+<div id="newsletterbox" class="section newsletterbox boxed dr-form ">
+      <h2>Nyhedsbrev <span>viden</span></h2>
+    <div class="newsletter-message">
+    <p></p>
+  </div>
+  <p class="description">Få seneste nyt om tech og videnskabens verden hver dag</p>
+  <div class="dr-newsletter-form">
+        <input class="mailingListName" type="hidden" value="viden-daglig" />
+    <div class="email-field">
+      <div class="form-item form-type-textfield">
+ <input class="email form-text" placeholder="Skriv din e-mail" name="email" type="text" size="60" maxlength="128" />
 </div>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-window.jQuery || document.write("<script src='/profiles/videnskab/modules/contrib/jquery_update/replace/jquery/1.8/jquery.js'>\x3C/script>")
-//--><!]]>
-</script>
-<script type="text/javascript" src="https://videnskab.dk/sites/default/files/js/js_V1ZuwJK9uzfm6fFffOcHHubfxnimoxnbgG58pvTQdpY.js"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-document.createElement( "picture" );
-//--><!]]>
-</script>
-<script type="text/javascript" src="https://videnskab.dk/sites/default/files/js/js_iB6eO8rrpPC2MvPS0uMPXo7y8xG8Fk94X2KdVPH1aEE.js"></script>
-<script type="text/javascript" src="https://videnskab.dk/sites/default/files/js/js_YJzUsteP6tvS62MwQPJwsY41sM0opPFMuPNBvjLWXZc.js"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-var gallup_s = 'videnskab'; var gallup_cp = 'videnskab'; var gallup_spring = '/profiles/videnskab/modules/custom/videnskab_shared/js/spring.js';
-//--><!]]>
-</script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-var springq = springq || []; springq.push({ s: gallup_s, cp: gallup_cp, url: document.location.href});
-//--><!]]>
-</script>
-<script type="text/javascript" src="https://videnskab.dk/sites/default/files/js/js_ELlqVbun3w_F-6iTRs-YSktXd1cfQ0biiEBKfN0pUXc.js"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"videnskab_theme","theme_token":"Lm3KL1cf8El0N7A44l-biNep_L9sqDQvhUytIfGgZ4o","js":{"profiles\/videnskab\/modules\/contrib\/picture\/picturefill2\/picturefill.min.js":1,"profiles\/videnskab\/modules\/contrib\/picture\/picture.min.js":1,"0":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.8.3\/jquery.js":1,"1":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"2":1,"profiles\/videnskab\/modules\/contrib\/fb_instant_articles\/modules\/fb_instant_articles_display\/js\/admin.js":1,"profiles\/videnskab\/modules\/contrib\/extlink\/extlink.js":1,"public:\/\/languages\/da_YJV7v9av5KxIl27iPddK2wdCMWvU2Svym0SI7pbxvLA.js":1,"3":1,"4":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/js\/respond.js":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/js\/script.js":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/js\/ios-orientationchange-fix.js":1,"profiles\/videnskab\/themes\/custom\/videnskab_theme\/dist\/bundle.js":1,"profiles\/videnskab\/themes\/custom\/videnskab_theme\/dist\/photoswipe.min.js":1,"profiles\/videnskab\/themes\/custom\/videnskab_theme\/dist\/photoswipe-ui-default.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"profiles\/videnskab\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/videnskab\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"profiles\/videnskab\/modules\/contrib\/picture\/picture_wysiwyg.css":1,"modules\/user\/user.css":1,"profiles\/videnskab\/modules\/contrib\/extlink\/extlink.css":1,"profiles\/videnskab\/modules\/contrib\/views\/css\/views.css":1,"profiles\/videnskab\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/videnskab\/modules\/contrib\/panels\/css\/panels.css":1,"profiles\/videnskab\/themes\/custom\/videnskab_theme\/templates\/layouts\/topic_frontpage_a\/topic-frontpage-a.css":1,"profiles\/videnskab\/modules\/contrib\/node_embed\/plugins\/node_embed\/node_embed.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/comment-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/comment.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/field-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/field.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/file.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/filter.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/image-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/image.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/locale-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/locale.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/menu.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/node.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/search-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/search.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/system.base-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/system.base.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/system.maintenance.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/system.menus-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/system.menus.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/system.messages-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/system.messages.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/system.theme-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/system.theme.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/taxonomy.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/user-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/user.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/addressfield-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/addressfield.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/entity.theme.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/field_group-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/field_group.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/horizontal-tabs-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/horizontal-tabs.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/multipage-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/multipage.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/link-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/link.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/panels.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/panels_dnd.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/panels_page.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/panelizer-ipe.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/pm_existing_pages.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/strongarm.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/views-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/views.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_cart.theme.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_checkout.base-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_checkout.base.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_checkout.theme-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_checkout.theme.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_customer.theme.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_line_item.theme-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_line_item.theme.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_order.theme.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_payment.theme-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_payment.theme.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_price.theme.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_product.theme.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_tax.theme-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_tax.theme.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_checkout_progress.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_add_to_cart_confirmation-rtl.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_add_to_cart_confirmation.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/your_price.theme.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_flat_rate.css":1,"profiles\/videnskab\/themes\/global\/adapt_basetheme\/commerce_search_api.css":1,"profiles\/videnskab\/themes\/custom\/videnskab_theme\/dist\/bundle.css":1,"profiles\/videnskab\/themes\/custom\/videnskab_theme\/dist\/print.css":1}},"urlIsAjaxTrusted":{"\/":true},"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":0,"extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"target":{"value":""}});
-//--><!]]>
-</script>
-    <script type="text/javascript" src="https://videnskab.dk/sites/default/files/js/js_7Ukqb3ierdBEL0eowfOKzTkNu-Le97OPm-UqTS5NENU.js"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-(function() { var scr = document.createElement('script'); scr.type = 'text/javascript'; scr.async = true; scr.src = gallup_spring; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(scr, s);})();
-//--><!]]>
-</script>
+    </div>
+    <input class="tilmeld form-submit" name="submit" type="submit" value="Tilmeld" />  </div>
+  <a class="dr-link-readmore" href="https://www.dr.dk/nyheder/nyhedsbreve/dr/tilmelding">Vis alle nyhedsbreve</a>
+</div>
+      </div>
+</div>
+
+    <div class="dr-list-themer dr-list-themer-teaser section boxed focus-zone-a alpha60 eventzone">
+      <h2>
+      Din geniale krop                        </h2>
+    <div class="row">
+
+      <div class="span-8 col-xs-12 col-sm-8">
+        <div class="item boxed">
+          <div class="row">
+
+
+                          <div class="col-xs-3 col-sm-12">
+
+
+<a href="https://www.dr.dk/interaktiv/webfeature/supersaed">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/interaktiv/webfeature/supersaed" class="image-wrap ratio-16-9"  data-width="1920" data-height="1080" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/02/12/supersaed_1d2.png" >
+
+  <noscript>
+    <img  width="1920" height="1080" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/02/12/supersaed_1d2.png" alt="supersaed_1d2.png" title="supersaed_1d2.png" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-9 col-sm-12">
+                              <a href="https://www.dr.dk/interaktiv/webfeature/supersaed" class="heading-xxlarge">Vil du ha&#039; super-sæd? Her er 5 gode råd</a>
+                                <span class="metainfo">
+                    <time datetime="2018-02-12T17:30:00+00:00">
+                      12. feb. 2018 kl. 18.30                    </time>
+                  </span>
+
+                                            <p>
+                  Ny forskning viser, at der er meget, du kan gøre for at forbedre din sædkvalitet.                </p>
+                                                      </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-4 divide col-xs-12 col-sm-4">
+        <div class="item boxed">
+          <div class="row">
+
+
+                          <div class="col-xs-3 col-sm-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/nysgerrig/din-liderlige-hjerne-snyder-dig-til-kaerlighed">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/nysgerrig/din-liderlige-hjerne-snyder-dig-til-kaerlighed" class="image-wrap ratio-16-9"  data-width="1920" data-height="1080" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/02/20/thumbnail.jpg" >
+
+  <noscript>
+    <img  width="1920" height="1080" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/02/20/thumbnail.jpg" alt="thumbnail.jpg" title="thumbnail.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-9 col-sm-12">
+                              <a href="/nyheder/viden/nysgerrig/din-liderlige-hjerne-snyder-dig-til-kaerlighed" class="heading-medium">Din liderlige hjerne snyder dig til kærlighed</a>
+                                <span class="metainfo">
+                    <time datetime="2018-02-19T19:01:00+00:00">
+                      19. feb. 2018 kl. 20.01                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-4 col-xs-12 col-sm-4 break">
+        <div class="item boxed">
+          <div class="row">
+
+
+                          <div class="col-xs-3 col-sm-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/kroppen/faktatjek-kan-du-styrke-dit-immunforsvar-og-undgaa-influenza">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/kroppen/faktatjek-kan-du-styrke-dit-immunforsvar-og-undgaa-influenza" class="image-wrap ratio-16-9"  data-width="5916" data-height="3950" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/02/12/scanpix-20160222-104244-3_0.jpg" >
+
+  <noscript>
+    <img  width="5916" height="3950" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/02/12/scanpix-20160222-104244-3_0.jpg" alt="scanpix-20160222-104244-3.jpg" title="scanpix-20160222-104244-3.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-9 col-sm-12">
+                              <a href="/nyheder/viden/kroppen/faktatjek-kan-du-styrke-dit-immunforsvar-og-undgaa-influenza" class="heading-medium">Faktatjek: Kan du styrke dit immunforsvar og undgå influenza? </a>
+                                <span class="metainfo">
+                    <time datetime="2018-02-12T18:13:00+00:00">
+                      12. feb. 2018 kl. 19.13                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  <div class="dr-list-themer dr-list-themer-teaser section mute-heading teaser-deck-a">
+    <div class="row">
+
+      <div class="span-8 col-xs-12 col-sm-8">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/teknologi/en-af-87-millioner-zuckerberg-blev-selv-ramt-af-facebook-skandalen">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/teknologi/en-af-87-millioner-zuckerberg-blev-selv-ramt-af-facebook-skandalen" class="image-wrap  ratio-16-9"  data-width="3000" data-height="2000" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/04/11/scanpix-20180411-173007-l.jpg" >
+
+  <noscript>
+    <img  width="3000" height="2000" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/04/11/scanpix-20180411-173007-l.jpg" alt="scanpix-20180411-173007-l.jpg" title="scanpix-20180411-173007-l.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12">
+                              <a href="/nyheder/viden/teknologi/en-af-87-millioner-zuckerberg-blev-selv-ramt-af-facebook-skandalen" class="heading-xxlarge">En af 87 millioner: Zuckerberg blev selv ramt af Facebook-skandalen</a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-11T18:04:00+02:00">
+                      kl. 18.04                    </time>
+                  </span>
+
+                                            <p>
+                  Topchefen fik også lækket sine oplysninger, da analysefirma udnyttede brugeres personlige data.                </p>
+                                                      </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-4 divide col-xs-6 col-sm-4">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/kroppen/ny-forskning-slikmunde-har-mindre-fedt-i-kroppen">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/kroppen/ny-forskning-slikmunde-har-mindre-fedt-i-kroppen" class="image-wrap  ratio-16-9"  data-width="3732" data-height="2491" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/04/11/20170607-064742-pf_26mb.jpg" >
+
+  <noscript>
+    <img  width="3732" height="2491" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/04/11/20170607-064742-pf_26mb.jpg" alt="20170607-064742-pf_26mb.jpg" title="20170607-064742-pf_26mb.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12">
+                              <a href="/nyheder/viden/kroppen/ny-forskning-slikmunde-har-mindre-fedt-i-kroppen" class="heading-medium">Ny forskning: Slikmunde har mindre fedt i kroppen </a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-11T17:01:00+02:00">
+                      kl. 17.01                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-4 col-xs-6 col-sm-4 break">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-12">
+
+
+<a href="https://www.dr.dk/live/nyheder/live/2766818">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/live/nyheder/live/2766818" class="image-wrap  ratio-16-9"  data-width="5184" data-height="3456" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/04/11/scanpix-20180411-165801-2.jpg" >
+
+  <noscript>
+    <img  width="5184" height="3456" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/04/11/scanpix-20180411-165801-2.jpg" alt="scanpix-20180411-165801-2.jpg" title="scanpix-20180411-165801-2.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12">
+                              <a href="https://www.dr.dk/live/nyheder/live/2766818" class="heading-medium">LIVE TV Zuckerberg: Vi lytter ikke med på dine telefonsamtaler</a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-11T15:55:00+02:00">
+                      kl. 15.55                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+<div class="dr-list-themer dr-list-themer-teaser section mute-heading teaser-deck-b">
+    <div class="row">
+
+      <div class="span-4 col-xs-12 col-sm-4">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/teknologi/klar-til-anden-halvleg-kan-kongressen-ryste-en-selvsikker-zuckerberg">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/teknologi/klar-til-anden-halvleg-kan-kongressen-ryste-en-selvsikker-zuckerberg" class="image-wrap  ratio-16-9"  data-width="3000" data-height="2000" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/crop/2018/04/11/1523451418_scanpix-20180411-144724-l.jpg" >
+
+  <noscript>
+    <img  width="3000" height="2000" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/crop/2018/04/11/1523451418_scanpix-20180411-144724-l.jpg" alt="scanpix-20180411-144724-l.jpg" title="scanpix-20180411-144724-l.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12">
+                              <a href="/nyheder/viden/teknologi/klar-til-anden-halvleg-kan-kongressen-ryste-en-selvsikker-zuckerberg" class="heading-medium">Klar til anden halvleg: Kan Kongressen ryste en selvsikker Zuckerberg?</a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-11T15:11:00+02:00">
+                      kl. 15.11                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-4 col-xs-6 col-sm-4">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/mogensens-rumkapsel-kan-snart-ses-pa-teknisk-museum">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/mogensens-rumkapsel-kan-snart-ses-pa-teknisk-museum" class="image-wrap  ratio-16-9"  data-width="620" data-height="349" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/04/11/20180411102810456_1000.jpg" >
+
+  <noscript>
+    <img  width="620" height="349" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/04/11/20180411102810456_1000.jpg" alt="20180411102810456_1000.jpg" title="20180411102810456_1000.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12">
+                              <a href="/nyheder/viden/mogensens-rumkapsel-kan-snart-ses-pa-teknisk-museum" class="heading-medium">Mogensens rumkapsel kan snart ses på teknisk museum</a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-11T10:50:00+02:00">
+                      kl. 10.50                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-4 col-xs-6 col-sm-4">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/teknologi/zuckerberg-fik-senatorer-til-ligne-teknologiske-analfabeter">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/teknologi/zuckerberg-fik-senatorer-til-ligne-teknologiske-analfabeter" class="image-wrap  ratio-16-9"  data-width="4500" data-height="3000" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/crop/2018/04/11/1523428058_scanpix-20180411-070727-l.jpg" >
+
+  <noscript>
+    <img  width="4500" height="3000" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/crop/2018/04/11/1523428058_scanpix-20180411-070727-l.jpg" alt="scanpix-20180411-070727-l.jpg" title="scanpix-20180411-070727-l.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12">
+                              <a href="/nyheder/viden/teknologi/zuckerberg-fik-senatorer-til-ligne-teknologiske-analfabeter" class="heading-medium">Zuckerberg fik senatorer til at ligne teknologiske analfabeter </a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-11T09:29:00+02:00">
+                      kl. 09.29                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+<div class="dr-list-themer dr-list-themer-teaser section boxed teaser-deck-d section boxed">
+      <h2>
+      Vi anbefaler                        </h2>
+    <div class="row">
+
+      <div class="span-3 col-xs-12 col-sm-3">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-3 col-sm-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/nysgerrig/overvaegtig-se-fordelene-ved-dine-ekstra-kilo">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/nysgerrig/overvaegtig-se-fordelene-ved-dine-ekstra-kilo" class="image-wrap ratio-16-9"  data-width="1920" data-height="1080" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/03/16/thumb.jpg" >
+
+  <noscript>
+    <img  width="1920" height="1080" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/03/16/thumb.jpg" alt="thumb_fedme.jpg" title="thumb_fedme.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-9 col-sm-12">
+                              <a href="/nyheder/viden/nysgerrig/overvaegtig-se-fordelene-ved-dine-ekstra-kilo" class="heading-small">Overvægtig? Se fordelene ved dine ekstra kilo</a>
+                                <span class="metainfo">
+                    <time datetime="2018-03-18T12:02:00+00:00">
+                      18. mar. 2018 kl. 13.02                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-3 col-xs-12 col-sm-3">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-3 col-sm-12">
+
+
+<a href="https://www.dr.dk/interaktiv/webfeature/fedmemyter">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/interaktiv/webfeature/fedmemyter" class="image-wrap ratio-16-9"  data-width="1920" data-height="1080" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/03/20/thumb_fedmemyter.png" >
+
+  <noscript>
+    <img  width="1920" height="1080" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/03/20/thumb_fedmemyter.png" alt="thumb_fedmemyter.png" title="thumb_fedmemyter.png" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-9 col-sm-12">
+                              <a href="https://www.dr.dk/interaktiv/webfeature/fedmemyter" class="heading-small">5 myter om fedme: Er du faldet for dem? </a>
+                                <span class="metainfo">
+                    <time datetime="2018-03-21T14:06:00+00:00">
+                      21. mar. 2018 kl. 15.06                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-3 col-xs-12 col-sm-3">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-3 col-sm-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/kroppen/lyseslukker-selv-en-smule-lys-i-sovevaerelset-kan-foere-til-depression">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/kroppen/lyseslukker-selv-en-smule-lys-i-sovevaerelset-kan-foere-til-depression" class="image-wrap ratio-16-9"  data-width="3840" data-height="2160" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/03/27/colourbox31055068.jpg" >
+
+  <noscript>
+    <img  width="3840" height="2160" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/03/27/colourbox31055068.jpg" alt="colourbox31055068.jpg" title="colourbox31055068.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-9 col-sm-12">
+                              <a href="/nyheder/viden/kroppen/lyseslukker-selv-en-smule-lys-i-sovevaerelset-kan-foere-til-depression" class="heading-small">Lyseslukker: Selv en smule lys i soveværelset kan føre til depression</a>
+                                <span class="metainfo">
+                    <time datetime="2018-03-30T12:00:00+00:00">
+                      30. mar. 2018 kl. 14.00                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-3 col-xs-12 col-sm-3">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-3 col-sm-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/klima/udsigt-til-fugle-loefter-dit-humoer-og-gavner-dit-mentale-helbred">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/klima/udsigt-til-fugle-loefter-dit-humoer-og-gavner-dit-mentale-helbred" class="image-wrap ratio-16-9"  data-width="3200" data-height="2400" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/crop/2018/03/30/1522394689_fuglihave_0dc7f0e2.jpg" >
+
+  <noscript>
+    <img  width="3200" height="2400" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/crop/2018/03/30/1522394689_fuglihave_0dc7f0e2.jpg" alt="Blåmejse spiser fuglefoder" title="Blåmejse spiser fuglefoder" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-9 col-sm-12">
+                              <a href="/nyheder/viden/klima/udsigt-til-fugle-loefter-dit-humoer-og-gavner-dit-mentale-helbred" class="heading-small">Udsigt til fugle løfter dit humør og gavner dit mentale helbred</a>
+                                <span class="metainfo">
+                    <time datetime="2018-03-31T08:33:00+00:00">
+                      31. mar. 2018 kl. 10.33                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+<div class="dr-list-themer dr-list-themer-teaser section mute-heading teaser-deck-a">
+    <div class="row">
+
+      <div class="span-8 col-xs-12 col-sm-8">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/har-alberte-windings-gener-gjort-hende-til-musiker-og-forfatter">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/har-alberte-windings-gener-gjort-hende-til-musiker-og-forfatter" class="image-wrap dr-icon-play-boxed-large ratio-16-9"  data-width="1920" data-height="1080" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/04/09/winding_stamtrae_0.jpg" >
+
+  <noscript>
+    <img  width="1920" height="1080" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/04/09/winding_stamtrae_0.jpg" alt="winding_stamtrae_0.jpg" title="winding_stamtrae_0.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12">
+                              <a href="/nyheder/viden/har-alberte-windings-gener-gjort-hende-til-musiker-og-forfatter" class="heading-xxlarge">Har Alberte Windings gener gjort hende til musiker og forfatter?</a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-11T08:04:00+02:00">
+                      kl. 08.04                    </time>
+                  </span>
+
+                                            <p>
+                  Har alle lige mulighed for at blive kunstnere? Forskning viser, at kreativitet er mere arveligt, end vi tidligere har troet.                </p>
+                                                      </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-4 divide col-xs-6 col-sm-4">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/teknologi/facebooks-aktier-steg-under-zuckerberg-hoering">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/teknologi/facebooks-aktier-steg-under-zuckerberg-hoering" class="image-wrap  ratio-16-9"  data-width="1920" data-height="1080" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/04/11/facebook-zuck-aktier.jpg" >
+
+  <noscript>
+    <img  width="1920" height="1080" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/04/11/facebook-zuck-aktier.jpg" alt="facebook-zuck-aktier.jpg" title="facebook-zuck-aktier.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12">
+                              <a href="/nyheder/viden/teknologi/facebooks-aktier-steg-under-zuckerberg-hoering" class="heading-medium">Facebooks aktier steg under Zuckerberg-høring</a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-11T06:34:00+02:00">
+                      kl. 06.34                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-4 col-xs-6 col-sm-4 break">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/teknologi/zuckerberg-i-fuld-kontrol-glider-af-paa-kritiske-spoergsmaal-fra-senatet">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/teknologi/zuckerberg-i-fuld-kontrol-glider-af-paa-kritiske-spoergsmaal-fra-senatet" class="image-wrap  ratio-16-9"  data-width="3500" data-height="2453" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/04/11/scanpix-20180410-234029-2_0.jpg" >
+
+  <noscript>
+    <img  width="3500" height="2453" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/04/11/scanpix-20180410-234029-2_0.jpg" alt="scanpix-20180410-234029-2.jpg" title="scanpix-20180410-234029-2.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12">
+                              <a href="/nyheder/viden/teknologi/zuckerberg-i-fuld-kontrol-glider-af-paa-kritiske-spoergsmaal-fra-senatet" class="heading-medium">Zuckerberg i fuld kontrol: Glider af på kritiske spørgsmål fra Senatet</a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-11T00:13:00+02:00">
+                      kl. 00.13                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="section boxed alpha60 dagensBillede gallery">
+          <h2>Videnskabsbilledet</h2>
+            <div class="row">
+      <div  class="col-xs-12">
+      <div class="carousel" aria-hidden="true">
+  <div class="slide">
+          <a href="/nyheder/viden/teknologi/rum-tesla-paa-afveje-ryger-langt-forbi-mars" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="1917" data-height="1073" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/02/08/scanpix-20180207-000124-2.jpg" >
+
+  <noscript>
+    <img  width="1917" height="1073" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/02/08/scanpix-20180207-000124-2.jpg" alt="scanpix-20180207-000124-2.jpg" title="scanpix-20180207-000124-2.jpg" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>Elon Musks elbil, som Falcon Heavy-raketten tirsdag sendte afsted mod Mars, ender i stedet alene i det tomme rum.</p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/teknologi/spacexs-genbrugs-rumkapsel-bringer-rumforsoeg-hjem-til-jorden" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="1200" data-height="1200" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/01/15/videnskabsbilledet_1.jpg" >
+
+  <noscript>
+    <img  width="1200" height="1200" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/01/15/videnskabsbilledet_1.jpg" alt="Dragon SpaceX teaser.jpg" title="Dragon SpaceX teaser.jpg" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>Efter en lille måned hos Den Internationale Rumstation er SpaceX's genbrugte Dragon-rumkapsel vendt tilbage til Jorden.</p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/klima/hajer-doer-af-kulde-i-usa" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="1600" data-height="1146" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/01/04/26116415_1599271203487522_2126634688443880960_o_preview_0.jpeg" >
+
+  <noscript>
+    <img  width="1600" height="1146" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/01/04/26116415_1599271203487522_2126634688443880960_o_preview_0.jpeg" alt="26116415_1599271203487522_2126634688443880960_o_preview_0.jpeg" title="26116415_1599271203487522_2126634688443880960_o_preview_0.jpeg" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>Kulden i Nordamerika har været så ekstrem, at frosne hajer er skyllet op på strandene på østkysten.</p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/teknologi/monsterraket-med-27-motorer-er-klar-til-rummet" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="2102" data-height="1394" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2017/12/22/heavy_preview.jpeg" >
+
+  <noscript>
+    <img  width="2102" height="1394" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2017/12/22/heavy_preview.jpeg" alt="heavy_preview.jpeg" title="heavy_preview.jpeg" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>Falcon Heavy er en af historiens største raketter, og den er snart parat til første test-opsendelse.
+</p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/naturvidenskab/spidsmusen-skrumper-sin-hjerne-efter-saeson" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="2100" data-height="1312" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2017/10/25/scanpix-20171024-234106-4.jpg" >
+
+  <noscript>
+    <img  width="2100" height="1312" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2017/10/25/scanpix-20171024-234106-4.jpg" alt="scanpix-20171024-234106-4.jpg" title="scanpix-20171024-234106-4.jpg" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>Hjerne, kranie, rygsøjle og indre organer skrumper, så spidsmusen kan overleve vinteren.</p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/naturvidenskab/amerikanske-alligatorer-aeder-sig-maette-i-hajer" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="2084" data-height="1172" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2017/10/17/gator-shark_0.jpg" >
+
+  <noscript>
+    <img  width="2084" height="1172" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2017/10/17/gator-shark_0.jpg" alt="gator-shark_0.jpg" title="gator-shark_0.jpg" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>Forskere har observeret de store krybdyr spise tre forskellige haj-arter og en rokke.</p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/naturvidenskab/fakta-saadan-ramte-tyngdeboelgerne-jorden" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="740" data-height="384" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2017/10/16/neutronstjerner_kolliderer.jpg" >
+
+  <noscript>
+    <img  width="740" height="384" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2017/10/16/neutronstjerner_kolliderer.jpg" alt="neutronstjerner_kolliderer.jpg" title="neutronstjerner_kolliderer.jpg" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>Det var en dag i august, at Jorden blev ramt af tyngdebølger fra stjerner, som kolliderede for 140 millioner år siden. </p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/naturvidenskab/nasa-er-taettere-paa-jupiters-roede-plet-end-nogensinde-foer" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="960" data-height="900" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/article/2017/07/13/juno_2.jpg" >
+
+  <noscript>
+    <img  width="960" height="900" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/article/2017/07/13/juno_2.jpg" alt="juno_2.jpg" title="juno_2.jpg" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>Rumsonden Juno har taget smukke nye billeder af et Solsystemet mest ekstreme fænomener.</p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/tech/ny-billigere-tesla-elbil-er-rullet-af-samlebaandet" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="1000" data-height="563" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/article/2017/07/10/20170703-191443-4-1000x562we.jpg" >
+
+  <noscript>
+    <img  width="1000" height="563" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/article/2017/07/10/20170703-191443-4-1000x562we.jpg" alt="20170703-191443-4-1000x562we.jpg" title="20170703-191443-4-1000x562we.jpg" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>Teslas grundlægger, Elon Musk, fik bilen med serienummer 1 i gave af bestyrelsesmedlem. </p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/naturvidenskab/europaeisk-mission-sender-satellitter-til-merkur-samtidigt" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="4690" data-height="3124" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2017/07/06/scanpix-20170706-142406-4.jpg" >
+
+  <noscript>
+    <img  width="4690" height="3124" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2017/07/06/scanpix-20170706-142406-4.jpg" alt="scanpix-20170706-142406-4.jpg" title="scanpix-20170706-142406-4.jpg" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>Et nyt europæisk-japansk samarbejde sender to satellitter til Solsystemets inderste planet.</p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/naturvidenskab/100-mio-aar-gammel-fugleunge-fundet-i-ravklump" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="2298" data-height="1601" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/article/2017/06/14/ravfugl.jpg" >
+
+  <noscript>
+    <img  width="2298" height="1601" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/article/2017/06/14/ravfugl.jpg" alt="ravfugl.jpg" title="ravfugl.jpg" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>Et internationalt forskerhold opdagede den meget velbevarede fugl i en klump burmesisk rav.</p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/tech/microsoft-grundlaegger-afsloerer-verdens-stoerste-fly" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="1200" data-height="675" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2017/06/01/scanpix-20170601-072910-l.jpg" >
+
+  <noscript>
+    <img  width="1200" height="675" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2017/06/01/scanpix-20170601-072910-l.jpg" alt="scanpix-20170601-072910-l.jpg" title="scanpix-20170601-072910-l.jpg" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>Flyet skal bruges til at sende raketter ud i rummet langt billigere end nuværende metoder.</p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/naturvidenskab/rumsonden-juno-viser-planeten-jupiters-saelsomme-skoenhed" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="2646" data-height="3395" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/article/2017/05/26/jupiter.jpg" >
+
+  <noscript>
+    <img  width="2646" height="3395" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/article/2017/05/26/jupiter.jpg" alt="Jupiter" title="Jupiter" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>NASA har delte nye billeder af vores solsystems største planet.</p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/naturvidenskab/sjaeldent-faenomen-vindmoeller-kloever-skyer-over-nordsoeen" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="3264" data-height="2448" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/article/2017/05/15/horns_rev_2_-_bel_air_aviation_-_1.png" >
+
+  <noscript>
+    <img  width="3264" height="2448" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/article/2017/05/15/horns_rev_2_-_bel_air_aviation_-_1.png" alt="horns_rev_2_-_bel_air_aviation_-_1.png" title="horns_rev_2_-_bel_air_aviation_-_1.png" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>Forklaringen på fænomenet skal findes i den perfekte kombination af varm og fugtig luft, et koldt hav og hård vind fra sydvest.
+</p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/naturvidenskab/mystisk-militaer-rumskib-lander-efter-718-dage-i-rummet" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="1024" data-height="683" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2017/05/09/170507-F-CU844-001.JPG" >
+
+  <noscript>
+    <img  width="1024" height="683" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2017/05/09/170507-F-CU844-001.JPG" alt="170507-F-CU844-001.JPG" title="170507-F-CU844-001.JPG" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>X-37B hedder den ubemandede rumfærge, som landede i weekenden efter rekordlang tid i kredsløb.</p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/naturvidenskab/dybhavsforsker-selvlysende-dyr-staar-en-kaempe-del-af-jordens-arter" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="1068" data-height="520" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/article/2017/04/11/lysende_dyr2.jpg" >
+
+  <noscript>
+    <img  width="1068" height="520" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/article/2017/04/11/lysende_dyr2.jpg" alt="lysende_dyr2.jpg" title="lysende_dyr2.jpg" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>​For første gang er det lykkedes at sætte tal på antallet af selvlysende dybhavsarter.
+</p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/naturvidenskab/heroin-lignende-fiskegift-giver-haab-udvikling-af-ny-medicin" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="720" data-height="492" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/article/2017/03/30/fisk.jpg" >
+
+  <noscript>
+    <img  width="720" height="492" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/article/2017/03/30/fisk.jpg" alt="fisk.jpg" title="fisk.jpg" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>Med giftfyldte hugtænder sender denne lille koralfisk sit bytte i morfinrus.   </p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/tech/3d-printede-foedevarer-skal-lokke-boern-og-aeldre-til-fadet" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="5433" data-height="3621" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/article/2017/03/28/3d_print_stjerne_zoom_002.jpg" >
+
+  <noscript>
+    <img  width="5433" height="3621" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/article/2017/03/28/3d_print_stjerne_zoom_002.jpg" alt="3d_print_stjerne_zoom_002.jpg" title="3d_print_stjerne_zoom_002.jpg" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>En 3D-printet gulerod formet som en stjerne skal lokke kræsne børn til at spise grøntsager.</p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/naturvidenskab/tyske-forskere-bygger-verdens-stoerste-og-kraftigste-kunstige-sol" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="1440" data-height="810" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/article/2017/03/24/synlight_buehne_xl.jpg" >
+
+  <noscript>
+    <img  width="1440" height="810" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/article/2017/03/24/synlight_buehne_xl.jpg" alt="synlight_buehne_xl.jpg" title="synlight_buehne_xl.jpg" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>Den kunstige sol, der kan levere 10.000 gange Jordens normale solstråling, skal bruges til forskning i miljøvenlig brint. </p>
+      </div>
+  <div class="slide">
+          <a href="/nyheder/viden/naturvidenskab/spacex-kapsel-vender-tilbage-til-jorden-fyldt-med-udstyr" class="link">
+<span>
+<div  role="presentation" aria-hidden="true" class="image-wrap ratio-16-9"  data-width="1200" data-height="800" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2017/03/20/c7ssi9avoaeuay-.jpg" >
+
+  <noscript>
+    <img  width="1200" height="800" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2017/03/20/c7ssi9avoaeuay-.jpg" alt="c7ssi9avoaeuay-.jpg" title="c7ssi9avoaeuay-.jpg" />
+  </noscript>
+
+  </div>
+</span>
+
+</a>                      <p>Med over to tons eksperimenter og testudstyr i lasten, plaskede Dragon igår planmæssigt ned i Stillehavet.</p>
+      </div>
+</div>
+  </div>
+    </div>
+  </div>
+  <div class="dr-list-themer dr-list-themer-teaser section mute-heading teaser-deck-a">
+    <div class="row">
+
+      <div class="span-8 col-xs-12 col-sm-8">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/teknologi/hestekraefter-som-50-biler-se-danmarks-nye-vindtunnel-blaese-ekstrem-vind">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/teknologi/hestekraefter-som-50-biler-se-danmarks-nye-vindtunnel-blaese-ekstrem-vind" class="image-wrap  ratio-16-9"  data-width="1920" data-height="1080" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/04/10/9821445_mlrk_vindtunnel_1-00.00.23.00.jpg" >
+
+  <noscript>
+    <img  width="1920" height="1080" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/04/10/9821445_mlrk_vindtunnel_1-00.00.23.00.jpg" alt="9821445_mlrk_vindtunnel_1-00.00.23.00.jpg" title="9821445_mlrk_vindtunnel_1-00.00.23.00.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12">
+                              <a href="/nyheder/viden/teknologi/hestekraefter-som-50-biler-se-danmarks-nye-vindtunnel-blaese-ekstrem-vind" class="heading-xxlarge">Hestekræfter som 50 biler: Se Danmarks nye vindtunnel blæse ekstrem vind</a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-10T21:50:00+02:00">
+                      10. apr. 2018 kl. 21.50                    </time>
+                  </span>
+
+                                            <p>
+                  Nyt anlæg har kostet over 80 millioner og skal bl.a. gøre vindmøller mindre støjende.                 </p>
+                                                      </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-4 divide col-xs-6 col-sm-4">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-12">
+
+
+<a href="https://www.dr.dk/live/nyheder/live/2766818">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/live/nyheder/live/2766818" class="image-wrap  ratio-16-9"  data-width="3256" data-height="2131" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/04/10/scanpix-20180410-211640-l.jpg" >
+
+  <noscript>
+    <img  width="3256" height="2131" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/04/10/scanpix-20180410-211640-l.jpg" alt="scanpix-20180410-211640-l.jpg" title="scanpix-20180410-211640-l.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12">
+                              <a href="https://www.dr.dk/live/nyheder/live/2766818" class="heading-medium">LIVE-TV Zuckerberg: Jeg håber ikke, vores dataindsamling overrasker brugerne</a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-10T20:00:00+02:00">
+                      10. apr. 2018 kl. 20.00                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-4 col-xs-6 col-sm-4 break">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/klima/nyopdaget-hvaloegle-var-et-af-de-stoerste-dyr-nogensinde">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/klima/nyopdaget-hvaloegle-var-et-af-de-stoerste-dyr-nogensinde" class="image-wrap  ratio-16-9"  data-width="6000" data-height="3942" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/04/10/shonisaurusgiantichthyosaurcnobumichitamura.jpg" >
+
+  <noscript>
+    <img  width="6000" height="3942" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/04/10/shonisaurusgiantichthyosaurcnobumichitamura.jpg" alt="shonisaurusgiantichthyosaurcnobumichitamura.jpg" title="shonisaurusgiantichthyosaurcnobumichitamura.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12">
+                              <a href="/nyheder/viden/klima/nyopdaget-hvaloegle-var-et-af-de-stoerste-dyr-nogensinde" class="heading-medium">Nyopdaget hvaløgle var et af de største dyr nogensinde</a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-10T17:02:00+02:00">
+                      10. apr. 2018 kl. 17.02                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+<div class="dr-list-themer dr-list-themer-teaser section mute-heading teaser-deck-a">
+    <div class="row">
+
+      <div class="span-8 col-xs-12 col-sm-8">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/teknologi/sidste-stop-paa-zuckerbergs-undskyldnings-turne-er-kongressen-det-kan-vi">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/teknologi/sidste-stop-paa-zuckerbergs-undskyldnings-turne-er-kongressen-det-kan-vi" class="image-wrap  ratio-16-9"  data-width="3000" data-height="2000" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/crop/2018/04/10/1523366870_scanpix-20180410-122834-l.jpg" >
+
+  <noscript>
+    <img  width="3000" height="2000" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/crop/2018/04/10/1523366870_scanpix-20180410-122834-l.jpg" alt="scanpix-20180410-122834-l.jpg" title="scanpix-20180410-122834-l.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12">
+                              <a href="/nyheder/viden/teknologi/sidste-stop-paa-zuckerbergs-undskyldnings-turne-er-kongressen-det-kan-vi" class="heading-xxlarge">Sidste stop på Zuckerbergs undskyldnings-turné er Kongressen: Det kan vi forvente </a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-10T17:00:00+02:00">
+                      10. apr. 2018 kl. 17.00                    </time>
+                  </span>
+
+                                            <p>
+                  Facebooks stifter skal de næste to dage stå skoleret i USAs kongres, hvor han skal svare på spørgsmål om, hvordan Facebook vil beskytte brugerenes data. Den første høring starter kl. 20.15 og kan følg                </p>
+                                                      </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-4 divide col-xs-6 col-sm-4">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/teknologi/tjek-om-dine-data-har-vaeret-en-del-af-facebook-skandalen">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/teknologi/tjek-om-dine-data-har-vaeret-en-del-af-facebook-skandalen" class="image-wrap  ratio-16-9"  data-width="3500" data-height="2333" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/04/11/scanpix-20180410-180132-3.jpg" >
+
+  <noscript>
+    <img  width="3500" height="2333" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/04/11/scanpix-20180410-180132-3.jpg" alt="scanpix-20180410-180132-3.jpg" title="scanpix-20180410-180132-3.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12">
+                              <a href="/nyheder/viden/teknologi/tjek-om-dine-data-har-vaeret-en-del-af-facebook-skandalen" class="heading-medium">Tjek om dine data har været en del af Facebook-skandalen</a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-10T16:47:00+02:00">
+                      10. apr. 2018 kl. 16.47                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span-4 col-xs-6 col-sm-4 break">
+        <div class="item">
+          <div class="row">
+
+
+                          <div class="col-xs-12">
+
+
+<a href="https://www.dr.dk/nyheder/viden/teknologi/korrespondent-om-datalaek-zuckerberg-kan-ikke-snakke-sig-ud-af-det-her">
+<div  role="presentation" aria-hidden="true" href="https://www.dr.dk/nyheder/viden/teknologi/korrespondent-om-datalaek-zuckerberg-kan-ikke-snakke-sig-ud-af-det-her" class="image-wrap  ratio-16-9"  data-width="1920" data-height="1080" data-scale-after="crop" data-ratio="16-9" data-src="https://www.dr.dk/images/other/2018/04/10/zuck.jpg" >
+
+  <noscript>
+    <img  width="1920" height="1080" role="presentation" aria-hidden="true" src="https://www.dr.dk/images/other/2018/04/10/zuck.jpg" alt="zuck.jpg" title="zuck.jpg" />
+  </noscript>
+
+  </div>
+</a>
+
+              </div>
+                        <div class="col-xs-12">
+                              <a href="/nyheder/viden/teknologi/korrespondent-om-datalaek-zuckerberg-kan-ikke-snakke-sig-ud-af-det-her" class="heading-medium">Korrespondent om datalæk: Zuckerberg kan ikke snakke sig ud af det her</a>
+                                <span class="metainfo">
+                    <time datetime="2018-04-10T10:14:00+02:00">
+                      10. apr. 2018 kl. 10.14                    </time>
+                  </span>
+
+                                                                    </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+
+      <link rel="stylesheet" href="//www.dr.dk/hydra/assets/NewsOverviewPartial.e76f0094a47e863786589cc1e509d909.css"/>
+      <div class="hydra-root" data-hydra-name="NewsOverviewPartial"><div class="hydra-news-overview-partial" data-reactroot=""><div><div style="overflow:hidden"><div class="dre-container" style="background-color:white"><div class="dre-section"><h2 class="dre-section__heading">Nyhedsoverblikket</h2><div class="dre-section__content"><div class="dre-show-more-loader"></div></div></div></div></div></div></div></div>
+      <script>
+        /*<!--*/
+        window.HYDRA_PROPS = window.HYDRA_PROPS || {};
+        window.HYDRA_PROPS['NewsOverviewPartial'] = {};
+        /*-->*/
+      </script>
+      <script src="//www.dr.dk/hydra/assets/common.591e19bf09a3324953a2.js"></script>
+      <script src="//www.dr.dk/hydra/assets/NewsOverviewPartial.9f93550b2891cf52cd1d.js"></script>
+          </div><!-- end.site-content -->
+</div><!-- end.site-wrapper -->
+
+
+    <!-- Drupal scripts start -->
+    <script type="text/javascript" src="/assets/js/007/global.js" async="async"></script>
+    <!-- Drupal scripts end -->
+    <noscript><img src="//ssl-dr.tns-gallup.dk/j0=,,,;+,cp=website/dr.dk/noscript/ +url=//www.dr.dk;;;" alt=""/></noscript><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"0a9a78a253","applicationID":"5966100","transactionName":"NFRaZBNUDBVTAkVbDA0ee0USQQ0LHRFQXAYPQhdWE1oMEm0RUFUG","queueTime":27,"applicationTime":2292,"atts":"GBNNEltOH0oQABMIGB5M","errorBeacon":"bam.nr-data.net","agent":""}</script><script type="text/javascript" src="/sites/all/themes/custom/dr_phoenix/assets/build/scripts/main.js?v=1522933550"></script>
+<script type="text/javascript" src="/sites/all/themes/custom/dr_phoenix/assets/build/sites/viden/scripts/javascript/script.js?v=1522933550"></script>
   </body>
 </html>
-
-BALLS;
-
